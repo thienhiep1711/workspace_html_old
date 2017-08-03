@@ -1,0 +1,173 @@
+﻿@import "../helpers/_variables.scss";
+@import "../helpers/_mixins.scss";
+
+
+/*Open Header mobie*/
+
+#header-sidebar {
+    width: 100%;
+    position: relative;
+    height: 50px;
+    background: #fff;
+    box-shadow: 2px 2px 6px #ccc;
+    z-index: 999999;
+}
+
+.left-h-sidebar {
+    width: 60px;
+    height: 50px;
+    float: left;
+    position: relative;
+    text-align: center;
+
+    a {
+        width: 100%;
+        height: 100%;
+        border: 0;
+        background: none;
+        cursor: pointer;
+        display: block;
+        text-align: center;
+        line-height: 50px;
+        padding-top: 4px;
+
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.right-h-sidebar {
+    width: calc(100% - 60px);
+    float: left;
+    padding-right: 60px;
+
+    .logo-mobie {
+        line-height: 39px;
+        display: block;
+        text-align: center;
+        height: 50px;
+        padding: 5px;
+
+        a {
+            display: block;
+            height: 100%;
+
+            img {
+                max-width: 100%;
+                vertical-align: middle;
+                max-height: 100%;
+                display: inline-block;
+            }
+        }
+    }
+}
+
+.button-call-search {
+    border-radius: 18px;
+    text-align: center;
+    line-height: 36px;
+    color: #4a4a4a;
+    font-size: 30px;
+    position: absolute;
+    right: 15px;
+    top: 8px;
+    width: 34px;
+    height: 34px;
+}
+
+.boxMobieSearch {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #fff;
+    visibility: hidden;
+    left: 0;
+    opacity: 0;
+    top: 0;
+    z-index: 10;
+    padding: 7px;
+    display: none;
+    transition: all 0.2s linear;
+
+    &.open {
+        display: block;
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+.frMobie-search {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: 0.2s ease;
+    z-index: 99;
+
+
+
+    .ipt-search {
+        width: calc(100% - 91px);
+        border: none;
+        text-indent: 10px;
+        float: left;
+        background: none;
+        font-size: 16px;
+        border: 1px solid #cccccc;
+        height: 37px;
+        border-radius: 0;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    .bt-search-mb {
+        width: 46px;
+        float: left;
+        height: 37px;
+        background: $color-primary;
+        border: none;
+        margin-top: 0;
+        color: #fff;
+        font-size: 16px;
+        text-transform: uppercase;
+
+        span {
+            font-size: 24px;
+        }
+    }
+
+    .bt-close-search-mb {
+        width: 41px;
+        float: left;
+        border: none;
+        background: none;
+        height: 37px;
+
+
+        span {
+            font-size: 22px;
+        }
+    }
+}
+
+#overlay {
+    position: fixed;
+    width: 100%;
+    display: none;
+    background-color: rgba(0,0,0,0.7);
+    height: 100%;
+
+    &.active {
+        visibility: visible;
+        z-index: 99999;
+        transition: background-color 0.3s ease-in-out;
+    }
+}
+
+@include mq(max-sm) {
+    #wrapper-main {
+        padding-top: 50px;
+    }
+}

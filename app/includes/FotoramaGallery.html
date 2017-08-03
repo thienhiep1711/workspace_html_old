@@ -1,0 +1,52 @@
+﻿<script src="js/fotorama.min.js"></script>
+<div id="wrap-fotorama">
+    <div class="fotorama-1" data-auto="false" data-allowfullscreen="true" data-nav="thumbs" data-fit="scaledown" data-thumbwidth="100" data-arrows="true" data-click="true" data-swipe="true">
+        <a href="img/img_slider-1.jpg" data-thumb="img/img_thub-1.jpg" data-caption="Tiêu đề 1"></a>
+        <a href="img/img_slider-2.jpg" data-thumb="img/img_thub-2.jpg" data-caption="Tiêu đề 2"></a>
+        <a href="img/img_slider-3.jpg" data-thumb="img/img_thub-3.jpg" data-caption="Tiêu đề 3"></a>
+        <a href="img/img_slider-3.jpg" data-thumb="img/img_thub-4.jpg" data-caption="Tiêu đề 4"></a>
+        <a href="img/img_slider-4.jpg" data-thumb="img/img_thub-5.jpg" data-caption="Tiêu đề 5"></a>
+    </div>
+    <div class="fotorama-2" data-auto="false" data-allowfullscreen="true" data-nav="thumbs" data-fit="scaledown" data-thumbwidth="100" data-arrows="true" data-click="true" data-swipe="true">
+        <a href="img/img_slider-1.jpg" data-thumb="img/img_thub-1.jpg" data-caption="Tiêu đề 6"></a>
+        <a href="img/img_slider-2.jpg" data-thumb="img/img_thub-2.jpg" data-caption="Tiêu đề 7"></a>
+        <a href="img/img_slider-3.jpg" data-thumb="img/img_thub-3.jpg" data-caption="Tiêu đề 8"></a>
+        <a href="img/img_slider-3.jpg" data-thumb="img/img_thub-4.jpg" data-caption="Tiêu đề 9"></a>
+        <a href="img/img_slider-4.jpg" data-thumb="img/img_thub-5.jpg" data-caption="Tiêu đề 10"></a>
+        <a href="img/img_slider-1.jpg" data-thumb="img/img_thub-1.jpg" data-caption="Tiêu đề 6"></a>
+        <a href="img/img_slider-2.jpg" data-thumb="img/img_thub-2.jpg" data-caption="Tiêu đề 7"></a>
+        <a href="img/img_slider-3.jpg" data-thumb="img/img_thub-3.jpg" data-caption="Tiêu đề 8"></a>
+        <a href="img/img_slider-3.jpg" data-thumb="img/img_thub-4.jpg" data-caption="Tiêu đề 9"></a>
+        <a href="img/img_slider-4.jpg" data-thumb="img/img_thub-5.jpg" data-caption="Tiêu đề 10"></a>
+        <a href="img/img_slider-1.jpg" data-thumb="img/img_thub-1.jpg" data-caption="Tiêu đề 6"></a>
+        <a href="img/img_slider-2.jpg" data-thumb="img/img_thub-2.jpg" data-caption="Tiêu đề 7"></a>
+        <a href="img/img_slider-3.jpg" data-thumb="img/img_thub-3.jpg" data-caption="Tiêu đề 8"></a>
+        <a href="img/img_slider-3.jpg" data-thumb="img/img_thub-4.jpg" data-caption="Tiêu đề 9"></a>
+        <a href="img/img_slider-4.jpg" data-thumb="img/img_thub-5.jpg" data-caption="Tiêu đề 10"></a>
+        <a href="img/img_slider-1.jpg" data-thumb="img/img_thub-1.jpg" data-caption="Tiêu đề 6"></a>
+        <a href="img/img_slider-2.jpg" data-thumb="img/img_thub-2.jpg" data-caption="Tiêu đề 7"></a>
+        <a href="img/img_slider-3.jpg" data-thumb="img/img_thub-3.jpg" data-caption="Tiêu đề 8"></a>
+        <a href="img/img_slider-3.jpg" data-thumb="img/img_thub-4.jpg" data-caption="Tiêu đề 9"></a>
+        <a href="img/img_slider-4.jpg" data-thumb="img/img_thub-5.jpg" data-caption="Tiêu đề 10"></a>
+    </div>
+</div>
+
+
+<script>
+    function callGalleryFoto(id) {
+        //$.post("URL" + id, function (data) {
+        //    $("#wrap-fotorama").html(data);
+
+        var i = $('.fotorama-' + id).fotorama({ allowfullscreen: true }).data('fotorama');
+        i.requestFullScreen();
+        $('.fotorama-' + id).on('fotorama:fullscreenenter fotorama:fullscreenexit', function (e, f) {
+            if (e.type === 'fotorama:fullscreenenter') {
+                f.setOptions({ nav: true });
+            } else {
+                f.destroy();
+            }
+        }).fotorama();
+
+        //});
+    }
+</script>

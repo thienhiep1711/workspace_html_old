@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi" class="no-js">
+<!-- Open head page -->
+@@include('./layouts/Head.html', { "namePage":"Trang chủ" })
+<!-- End head page -->
+<body>
+@@include('./includes/LoadingWrap.html')
+<div id="wrapper">
+    <!-- Open sidebar mmenu -->
+    @@include('./layouts/HeaderMmenu.html')
+    <!-- End sidebar mmenu -->
+    <div class="wrapper-main">
+        <!-- Open header pages -->
+        <!-- @@include('./layouts/Header.html') -->
+        <!-- End header pages -->
+        <!-- Open main pages -->
+
+        <div class="container">
+            <a data-fancybox data-src="#popup-cart" class="btn btn-info"><span>Giỏ hàng của bạn<b>(1)</b></span></a>
+            @@include('./includes/CartPopup.html')
+            <a href="#" title="" onclick="callGalleryFoto(1)" class="btn btn-info">Popup Album Gallery 1</a>
+            <a href="#" title="" onclick=" callGalleryFoto(2) " class="btn btn-info">Popup Album Gallery 2</a>
+
+            @@include('./includes/ModuleRating.html')
+            @@include('./includes/ModuleGalleryPicture.html')
+
+            @@include('./includes/FotoramaGallery.html')
+            <a data-fancybox data-src="#popupName" title="" class="btn btn-info">Popup Wrap</a>
+            @@include('./includes/PopupWrap.html')
+            @@include('./includes/PopupThanks.html')
+            @@include('./includes/CartPage.html')
+            @@include('./includes/NewsListGird.html')
+            @@include('./includes/SliderGalleryFancy.html')
+            @@include('./includes/GalleryMansoryFancy.html')
+            <div class="row">
+                <div class="col-md-9">
+                    @@include('./includes/NewsList.html')
+                </div>
+            </div>
+            @@include('./includes/Contact.html')
+        </div>
+        <!-- End main pages -->
+
+
+        <!-- Open footer pages -->
+        @@include('./layouts/Footer.html')
+        <!-- End footer pages -->
+    </div>
+</div>
+<!-- Open content bottom pages -->
+@@include('./layouts/EndPage.html')
+<!-- End content bottom pages -->
+</body>
+</html>
