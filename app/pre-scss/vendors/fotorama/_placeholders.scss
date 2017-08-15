@@ -130,9 +130,9 @@
 }
 
 %sprite {
-  background: url('../img/fotorama.png') no-repeat;
+  background: url('../img/icons/fotorama.png') no-repeat;
   @media (#{-webkit-min-device-pixel-ratio}: 1.5), (min-resolution: 2dppx) {
-    background: url('../img/fotorama@2x.png') no-repeat;
+    background: url('../img/icons/fotorama@2x.png') no-repeat;
     background-size: 96px 160px;
   }
   @extend %no-bg-on-print;

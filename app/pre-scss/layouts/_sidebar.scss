@@ -158,7 +158,7 @@
     display: none;
     background-color: rgba(0,0,0,0.7);
     height: 100%;
-
+    z-index:9999;
     &.active {
         visibility: visible;
         z-index: 99999;
@@ -169,5 +169,10 @@
 @include mq(max-sm) {
     #wrapper-main {
         padding-top: 50px;
+    }
+    .fancybox-enabled {
+        #header-sidebar {
+            box-shadow:none;
+        }
     }
 }

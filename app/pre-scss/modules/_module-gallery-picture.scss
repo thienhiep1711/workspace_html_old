@@ -2,7 +2,7 @@
 @import "../helpers/_mixins.scss";
 
 .picture-box {
-    width: 450px;
+    max-width: 450px;
 
     img {
         max-width: 100%;
@@ -21,17 +21,18 @@
     margin-right:30px;
     .item {
        .img {
-            padding:10px;
+            padding:8px;
             border:1px solid $border-color-primary;
             border-radius:4px;
             height:67px;
             text-align:center;
-            line-height:67px;
+            line-height:69px;
             
        }
        i {
            font-size:40px;
            line-height:1em;
+           color:$text-color-primary;
            
        }
        span {
@@ -68,4 +69,39 @@
 
         }
     }
+}
+
+.fancybox-thumbs {
+  top: auto;
+  width: auto;
+  bottom: 10px;
+  left: 0;
+  right : 0;
+  height: 80px;
+  background: transparent;
+}
+
+.fancybox-thumbs > ul > li {
+  border-color: transparent;
+}
+
+.fancybox-container--thumbs .fancybox-caption-wrap, 
+.fancybox-container--thumbs .fancybox-controls, 
+.fancybox-container--thumbs .fancybox-slider-wrap {
+  right: 0;
+  bottom: 0;
+}
+
+@media all and (max-width: 800px) {
+
+	.fancybox-thumbs {
+		display: none !important;
+	}
+
+	.fancybox-container--thumbs .fancybox-controls,
+	.fancybox-container--thumbs .fancybox-slider-wrap,
+	.fancybox-container--thumbs .fancybox-caption-wrap {
+		bottom: 0;
+	}
+
 }

@@ -5376,8 +5376,9 @@
     z-index: 99995; }
   .fancybox-show-thumbs .fancybox-thumbs {
     display: block; }
-  .fancybox-show-thumbs .fancybox-inner {
-    right: 220px; }
+  /*.fancybox-show-thumbs .fancybox-inner {
+        right: 220px;
+    }*/
   .fancybox-thumbs > ul {
     list-style: none;
     position: absolute;
@@ -6439,7 +6440,7 @@ html.mm-opening .mm-slideout {
     -webkit-touch-callout: none; }
   .owl-carousel .owl-item img {
     display: block;
-    width: 100%; }
+    max-width: 100%; }
   .owl-carousel .owl-nav.disabled,
   .owl-carousel .owl-dots.disabled {
     display: none; }
@@ -9618,10 +9619,10 @@ html.mm-opening .mm-slideout {
   -webkit-tap-highlight-color: transparent; }
 
 .fotorama__arr, .fotorama__fullscreen-icon, .fotorama__video-play, .fotorama__video-close {
-  background: url("../img/fotorama.png") no-repeat; }
+  background: url("../img/icons/fotorama.png") no-repeat; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
     .fotorama__arr, .fotorama__fullscreen-icon, .fotorama__video-play, .fotorama__video-close {
-      background: url("../img/fotorama@2x.png") no-repeat;
+      background: url("../img/icons/fotorama@2x.png") no-repeat;
       background-size: 96px 160px; } }
 
 .fotorama__thumb {

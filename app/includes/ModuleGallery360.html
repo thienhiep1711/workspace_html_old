@@ -1,0 +1,39 @@
+<script src="js/nhatcuong_360.js"></script>
+
+<div id="image-360-wrap">
+    <div id="image-360-close"><span class="ion-close-round"></span></div>
+    <h3 class="image-360-title">Hình ảnh 360 độ của Iphone 6s Plus</h3>
+    <small>Giữ chuột và kéo về 2 bên để xem các góc của sản phẩm</small>
+    <div class="image-360-view">
+        <div class="images-360-body image-360">
+            <div class="spinner">
+                <span>0%</span>
+            </div>
+            <ol class="image-360_images"></ol>
+        </div>
+    </div>
+</div>
+
+<script>
+   
+
+    window.onload = init;
+    var car;
+    function init() {
+        car = $('.image-360').ThreeSixty({
+            totalFrames: 36, // Total no. of image you have for 360 slider
+            endFrame: 36, // end frame for the auto spin animation
+            currentFrame: 1, // This the start frame for auto spin
+            imgList: '.image-360_images', // selector for image list
+            progress: '.spinner', // selector to show the loading progress
+            imagePath: 'img/products/360/', // path of the image assets
+            filePrefix: 'iphone-7-plus-128gb-360-org-', // file prefix if any
+            ext: '.jpg', // extention for the assets
+            width: 680,
+            height: 510,
+            navigation: false,
+            responsive: true,
+        });
+        car.play();
+    }
+</script>

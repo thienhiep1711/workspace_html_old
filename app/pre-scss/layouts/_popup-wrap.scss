@@ -7,12 +7,12 @@
     margin: 10px auto;
     max-height: 100%;
     position: relative;
-    padding:0;
+    padding: 0;
     opacity: 0;
     transform: translateY(-50px);
     transition: all .3s;
-    overflow:visible;
-    display:none;
+    overflow: visible;
+    display: none;
 
 
     .popup-header {
@@ -22,8 +22,9 @@
     .popup-content {
         text-align: center;
         width: 100%;
-        padding: 20px 30px;
-        overflow:hidden;
+        padding: 20px 25px 10px 25px;
+        max-height: calc(100vh - 80px);
+        overflow: auto;
     }
 
     .popup-footer {
@@ -33,8 +34,8 @@
         background-color: $color-primary;
         color: #fff;
         text-transform: uppercase;
-        padding: 15px;
-        font-size: 18px;
+        padding: 13px;
+        font-size: 17px;
     }
 
     .popup-button {
@@ -64,7 +65,7 @@
     label {
         &.error {
             font-size: 14px;
-            color: #f00;
+            color: #a94442;
             padding-top: 4px;
             width: 100%;
             font-weight: normal;
@@ -73,49 +74,13 @@
         }
     }
 
-    .ipt-text {
-        outline: none;
-        border: 1px solid #e3e3e3;
-        text-indent: 5px;
-        float: right;
-        font-size: 16px;
-        background-color: transparent;
-        height: 38px;
-        width: 100%;
-    }
 
     textarea {
         height: auto !important;
     }
 
-    .form-group {
-        float: left;
-        width: 100%;
-        position: relative;
-
-        h3 {
-            font-size: 18px;
-            color: $color-primary;
-            line-height: 1.4em;
-            display: block;
-            width: 100%;
-            text-transform: none;
-
-            i {
-                text-decoration: underline;
-            }
-        }
-    }
-
-    .form-control {
-        border-radius: 0;
-        outline: none;
-        border: 1px solid #e3e3e3;
-        box-shadow: none;
-    }
-
     .error {
-        border-color: #f00;
+        border-color: #a94442;
     }
 
     .boxRadioCheck, .boxCheckbox {
@@ -128,29 +93,25 @@
     }
 
     button.fancybox-close-small {
-        top: -30px;
-        right: -30px;
         width: 44px;
         height: 44px;
-        border: 2px solid #000;
         border-radius: 22px;
-        background-color: #000;
         color: #fff;
         opacity: 1;
         transition: 0.3s ease-in-out;
-        outline:none;
+        outline: none;
+
         &:after {
-            background:transparent;
-            font-size:36px;
-            color:#fff;
-            transform:none;
-            width:100%;
-            height:100%;
-            left:0;
-            top:0;
-            line-height: 40px;
-            text-align:center;
-            
+            background: transparent;
+            font-size: 36px;
+            color: #fff;
+            transform: none;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            line-height: 44px;
+            text-align: center;
         }
 
         &:hover {
@@ -169,13 +130,12 @@
 }
 
 .popup-content-wrap {
-    float:left;
-    width:100%;
-    background-color:#fff;
+    float: left;
+    width: 100%;
+    background-color: #fff;
 }
 
 .popup-register {
-
 }
 
 .popup-thanks {
@@ -207,16 +167,6 @@
         .form-group {
             margin-bottom: 10px;
         }
-
-        .ipt-text {
-            font-size: 14px;
-            height: 32px;
-        }
-
-        select {
-            margin-bottom: 5px;
-            margin-top: 10px;
-        }
     }
 }
 
@@ -227,13 +177,16 @@
         .popup-button {
             width: 100%;
         }
-
         .popup-content {
             padding: 15px;
+            max-height:none;
+        }
+        select {
+            margin-bottom:15px;
         }
         label {
             &.error {
-                font-size:12px;
+                font-size: 12px;
             }
         }
     }

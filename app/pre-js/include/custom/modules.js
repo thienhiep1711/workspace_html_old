@@ -52,7 +52,7 @@ $(document).ready(function () {
         dots:false,
         responsive: {
             0: {
-                items: 2,
+                items: 3,
                 nav: false,
                 dots: false,
             },
@@ -184,7 +184,6 @@ function fancyGallery() {
             transitionEffect: "tube",
             caption: function (instance, item) {
                 return $(this).find('.caption').html();
-
             }
         }, visibleLinks.index(this));
         return false;

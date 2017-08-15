@@ -57,7 +57,7 @@
 <div id="wrapper">
     <!-- Open sidebar mmenu -->
     <div id="overlay"></div>
-<div id="header-sidebar" class="hidden-md hidden-lg">
+<div id="header-sidebar" class="d-md-none">
     <div class="left-h-sidebar">
         <a href="#my-mobile-menu" class="sidebar-toggle js-mmenu">
             <span id="sidebar-icon">
@@ -70,7 +70,7 @@
     <div class="right-h-sidebar">
         <div class="logo-mobie">
             <a href="#" title="">
-                <img src="img/logo-mobie.png" alt="" class="img-responsive" a/>
+                <img src="img/logo/logo-mobie.png" alt="" class="img-fluid" a/>
             </a>
         </div>
         <div class="boxMobieSearch">
@@ -92,7 +92,7 @@
         <!-- Open main pages -->
 
         <div class="container">
-            <a data-fancybox data-src="#popup-cart" class="btn btn-info"><span>Giỏ hàng của bạn<b>(1)</b></span></a>
+            <a href="#popup-cart" data-fancybox data-src="#popup-cart" class="btn btn-info"><span>Giỏ hàng của bạn<b>(1)</b></span></a>
             <div id="popup-cart" class="fancy-popup-style">
     <div class="header-pop">
         <strong>Giỏ hàng</strong>
@@ -122,7 +122,7 @@
                         <tr>
                             <td>
                                 <div class="img">
-                                    <img src="img/img-pro-3.jpg" class="img-responsive" />
+                                    <img src="img/products/img-pro-3.jpg" class="img-fluid" />
                                 </div>
                                 <div class="name">
                                     <a href="#" title="" class="name-product">Thẻ nhớ 32gb tốc độ cao Up to 85MB/s</a>
@@ -153,7 +153,7 @@
                         <tr>
                             <td>
                                 <div class="img">
-                                    <img src="img/img-pro-1.jpg" class="img-responsive" />
+                                    <img src="img/products/img-pro-1.jpg" class="img-fluid" />
                                 </div>
                                 <div class="name">
                                     <a href="#" title="" class="name-product">Thẻ nhớ 32gb tốc độ cao Up to 85MB/s</a>
@@ -183,38 +183,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <div class="img"><img src="img/img-pro-2.jpg" class="img-responsive" />
-                                </div>
-                                <div class="name">
-                                    <a href="#" title="" class="name-product">Thẻ nhớ 32gb tốc độ cao Up to 85MB/s</a>
-                                    <ul class="status">
-                                        <li class="status-pro">Còn hàng</li>
-                                        <li><a href="#" class="gift"><i class="fa fa-gift"></i>Ưu đãi</a></li>
-                                        <li><a href="#" class="remove"><i class="fa fa-remove"></i>Xóa</a></li>
-                                    </ul>
-                                </div>
-                            </td>
-                            <td><strong>15.900.000 vnđ</strong></td>
-                            <td>
-                                <select class="form-control">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                    <option value="6">6</option>
-                                    <option value="7">7</option>
-                                    <option value="8">8</option>
-                                    <option value="9">9</option>
-                                    <option value="10">10</option>
-                                </select>
-                            </td>
-                            <td><strong>15.900.000 vnđ</strong></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="img">
-                                    <img src="img/img-pro-3.jpg" class="img-responsive" />
+                                <div class="img"><img src="img/products/img-pro-2.jpg" class="img-fluid" />
                                 </div>
                                 <div class="name">
                                     <a href="#" title="" class="name-product">Thẻ nhớ 32gb tốc độ cao Up to 85MB/s</a>
@@ -245,7 +214,38 @@
                         <tr>
                             <td>
                                 <div class="img">
-                                    <img src="img/img-pro-3.jpg" class="img-responsive" />
+                                    <img src="img/products/img-pro-3.jpg" class="img-fluid" />
+                                </div>
+                                <div class="name">
+                                    <a href="#" title="" class="name-product">Thẻ nhớ 32gb tốc độ cao Up to 85MB/s</a>
+                                    <ul class="status">
+                                        <li class="status-pro">Còn hàng</li>
+                                        <li><a href="#" class="gift"><i class="fa fa-gift"></i>Ưu đãi</a></li>
+                                        <li><a href="#" class="remove"><i class="fa fa-remove"></i>Xóa</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td><strong>15.900.000 vnđ</strong></td>
+                            <td>
+                                <select class="form-control">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                            </td>
+                            <td><strong>15.900.000 vnđ</strong></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="img">
+                                    <img src="img/products/img-pro-3.jpg" class="img-fluid" />
                                 </div>
                                 <div class="name">
                                     <a href="#" title="" class="name-product">Thẻ nhớ 32gb tốc độ cao Up to 85MB/s</a>
@@ -279,8 +279,12 @@
             <div class="code-total">
                 <div class="code">
                     <small><i class="fa fa-code"></i>Mã giảm giá / ưu đãi</small>
-                    <input type="text" class="form-control ipt" placeholder="Xin nhập mã" />
-                    <input type="button" class="bt" value="Áp dụng" />
+                    <div class="input-group">
+                        <input type="text" class="form-control ipt" placeholder="Xin nhập mã"/>
+                        <span class="input-group-btn">
+                            <input type="button" class="btn btn-primary" value="Áp dụng" />
+                        </span>
+                    </div>
                 </div>
                 <div class="total">
                     <small>Tạm tính<span>(Đã có VAT)</span></small>
@@ -290,122 +294,15 @@
         </div>
         <div class="footer-pop">
             <div class="bt-option-pop-cart">
-                <a href="#" title="" class="btn btn-default fl hidden-xs">Tiếp tục mua hàng</a>
-                <a href="#" title="" class="btn btn-default fl">Xóa toàn bộ giỏ hàng</a>
+                <a href="#" title="" class="btn btn-outline-danger fl hidden-xs">Tiếp tục mua hàng</a>
+                <a href="#" title="" class="btn btn-outline-danger fl">Xóa toàn bộ giỏ hàng</a>
                 <a href="payment.html" title="" class="btn btn-success fr">Thanh toán</a>
             </div>
         </div>
     </form>
    </div>
 
-            <a href="#" title="" onclick="callGalleryFoto(1)" class="btn btn-info">Popup Album Gallery 1</a>
-            <a href="#" title="" onclick=" callGalleryFoto(2) " class="btn btn-info">Popup Album Gallery 2</a>
-
-            
-            ﻿<div class="picture-box">
-    <div class="picture-pro">
-        <img src="img/pro-picture-1.png"/>
-    </div>
-    <div class="picture-sld">
-        <ul class="owl-carousel js-sld-picture">
-            <li class="item" onclick="">
-                <div class="img"><img class="owl-lazy" data-src="img/pro-thub-1.png"/>
-                </div>
-                <span>Tím</span>
-            </li>
-            <li class="item" onclick="">
-                <div class="img">
-                    <img class="owl-lazy" data-src="img/pro-thub-2.png"/>
-                </div>
-                <span>Đen</span>
-            </li>
-            <li class="item" onclick="">
-                <div class="img">
-                    <img class="owl-lazy" data-src="img/pro-thub-3.png"/>
-                </div>
-                <span>Vàng đồng</span>
-            </li>
-            <li class="item" onclick="">
-                <div class="img">
-                    <i class="ion-social-dropbox-outline"></i>
-                </div>
-                <span>Unbox, mở hộp</span>
-            </li>
-            <li class="item" onclick="">
-                <div class="img">
-                    <i class="ion-ios-camera-outline"></i>
-                </div>
-                <span>Ảnh chụp Camera</span>
-            </li>
-            <li class="item" onclick="">
-                <div class="img">
-                    <img class="owl-lazy" data-src="img/icon-360.png"/>
-                </div>
-                <span>Ảnh 360</span>
-            </li>
-            <li class="item" onclick="">
-                <div class="img">
-                    <i class="ion-social-youtube-outline"></i>
-                </div>
-                <span>Video</span>
-            </li>
-        </ul>
-    </div>
-</div>
-
-            ﻿<script src="js/fotorama.min.js"></script>
-<div id="wrap-fotorama">
-    <div class="fotorama-1" data-auto="false" data-allowfullscreen="true" data-nav="thumbs" data-fit="scaledown" data-thumbwidth="100" data-arrows="true" data-click="true" data-swipe="true">
-        <a href="img/img_slider-1.jpg" data-thumb="img/img_thub-1.jpg" data-caption="Tiêu đề 1"></a>
-        <a href="img/img_slider-2.jpg" data-thumb="img/img_thub-2.jpg" data-caption="Tiêu đề 2"></a>
-        <a href="img/img_slider-3.jpg" data-thumb="img/img_thub-3.jpg" data-caption="Tiêu đề 3"></a>
-        <a href="img/img_slider-3.jpg" data-thumb="img/img_thub-4.jpg" data-caption="Tiêu đề 4"></a>
-        <a href="img/img_slider-4.jpg" data-thumb="img/img_thub-5.jpg" data-caption="Tiêu đề 5"></a>
-    </div>
-    <div class="fotorama-2" data-auto="false" data-allowfullscreen="true" data-nav="thumbs" data-fit="scaledown" data-thumbwidth="100" data-arrows="true" data-click="true" data-swipe="true">
-        <a href="img/img_slider-1.jpg" data-thumb="img/img_thub-1.jpg" data-caption="Tiêu đề 6"></a>
-        <a href="img/img_slider-2.jpg" data-thumb="img/img_thub-2.jpg" data-caption="Tiêu đề 7"></a>
-        <a href="img/img_slider-3.jpg" data-thumb="img/img_thub-3.jpg" data-caption="Tiêu đề 8"></a>
-        <a href="img/img_slider-3.jpg" data-thumb="img/img_thub-4.jpg" data-caption="Tiêu đề 9"></a>
-        <a href="img/img_slider-4.jpg" data-thumb="img/img_thub-5.jpg" data-caption="Tiêu đề 10"></a>
-        <a href="img/img_slider-1.jpg" data-thumb="img/img_thub-1.jpg" data-caption="Tiêu đề 6"></a>
-        <a href="img/img_slider-2.jpg" data-thumb="img/img_thub-2.jpg" data-caption="Tiêu đề 7"></a>
-        <a href="img/img_slider-3.jpg" data-thumb="img/img_thub-3.jpg" data-caption="Tiêu đề 8"></a>
-        <a href="img/img_slider-3.jpg" data-thumb="img/img_thub-4.jpg" data-caption="Tiêu đề 9"></a>
-        <a href="img/img_slider-4.jpg" data-thumb="img/img_thub-5.jpg" data-caption="Tiêu đề 10"></a>
-        <a href="img/img_slider-1.jpg" data-thumb="img/img_thub-1.jpg" data-caption="Tiêu đề 6"></a>
-        <a href="img/img_slider-2.jpg" data-thumb="img/img_thub-2.jpg" data-caption="Tiêu đề 7"></a>
-        <a href="img/img_slider-3.jpg" data-thumb="img/img_thub-3.jpg" data-caption="Tiêu đề 8"></a>
-        <a href="img/img_slider-3.jpg" data-thumb="img/img_thub-4.jpg" data-caption="Tiêu đề 9"></a>
-        <a href="img/img_slider-4.jpg" data-thumb="img/img_thub-5.jpg" data-caption="Tiêu đề 10"></a>
-        <a href="img/img_slider-1.jpg" data-thumb="img/img_thub-1.jpg" data-caption="Tiêu đề 6"></a>
-        <a href="img/img_slider-2.jpg" data-thumb="img/img_thub-2.jpg" data-caption="Tiêu đề 7"></a>
-        <a href="img/img_slider-3.jpg" data-thumb="img/img_thub-3.jpg" data-caption="Tiêu đề 8"></a>
-        <a href="img/img_slider-3.jpg" data-thumb="img/img_thub-4.jpg" data-caption="Tiêu đề 9"></a>
-        <a href="img/img_slider-4.jpg" data-thumb="img/img_thub-5.jpg" data-caption="Tiêu đề 10"></a>
-    </div>
-</div>
-
-
-<script>
-    function callGalleryFoto(id) {
-        //$.post("URL" + id, function (data) {
-        //    $("#wrap-fotorama").html(data);
-
-        var i = $('.fotorama-' + id).fotorama({ allowfullscreen: true }).data('fotorama');
-        i.requestFullScreen();
-        $('.fotorama-' + id).on('fotorama:fullscreenenter fotorama:fullscreenexit', function (e, f) {
-            if (e.type === 'fotorama:fullscreenenter') {
-                f.setOptions({ nav: true });
-            } else {
-                f.destroy();
-            }
-        }).fotorama();
-
-        //});
-    }
-</script>
-            <a data-fancybox data-src="#popupName" title="" class="btn btn-info">Popup Wrap</a>
+            <a href="#popupName" data-fancybox data-src="#popupName" title="" class="btn btn-info">Popup Wrap</a>
             <div class="popup-wrap popup-register" id="popupName">
     <div class="popup-content-wrap">
         <div class="popup-header">
@@ -415,19 +312,21 @@
             <form class="form-register" id="frmRegister">
                 <div class="form-group">
                     <label class="control-label">Họ tên:</label>
-                    <input type="text" class="ipt-text" placeholder="Họ tên" name="rgName" />
+                    <input type="text" class="form-control" placeholder="Họ tên" name="rgName" />
                 </div>
                 <div class="form-group">
                     <label class="control-label">Số điện thoại:</label>
-                    <input type="text" class="ipt-text" placeholder="Số điện thoại" name="rgPhone" />
+                    <input type="text" class="form-control" placeholder="Số điện thoại" name="rgPhone" />
                 </div>
                 <div class="form-group">
                     <label class="control-label">Email:</label>
-                    <input type="text" class="ipt-text" placeholder="Email" name="rgEmail" />
+                    <input type="text" class="form-control" placeholder="Email" name="rgEmail" />
                 </div>
                 <div class="form-group">
-                    <label class="control-label">Chọn shop gần bạn nhất:</label>
                     <div class="row">
+                        <div class="col-xs-12">
+                            <label class="control-label">Chọn shop gần bạn nhất:</label>
+                        </div>
                         <div class="col-sm-5">
                             <select class="form-control" name="rgAddress">
                                 <option value="">Chọn thành phố</option>
@@ -468,16 +367,288 @@
                 </div>
                 <div class="form-group">
                     <label class="control-label">Tỉnh khác (vui lòng ghi địa chỉ):</label>
-                    <textarea type="text" class="ipt-text" rows="4" placeholder="Địa chỉ" name="rgContent"></textarea>
+                    <textarea type="text" class="form-control" rows="4" placeholder="Địa chỉ" name="rgContent"></textarea>
                 </div>
                 <div class="form-group">
-                    <button type="submit" id="frmButton" class="popup-button">Đăng Ký</button>
+                    <button type="submit" id="frmButton" class="btn btn-primary">Đăng Ký</button>
                 </div>
             </form>
         </div>
         <div class="popup-footer"></div>
     </div>
 </div>
+            <a href="#" title="" onclick="callGalleryFoto(1)" class="btn btn-info">Popup Album Gallery 1</a>
+            <a href="#" title="" onclick="callGalleryFoto(2)" class="btn btn-info">Popup Album Gallery 2</a>
+            
+            <script src="js/jquery.fancybox.min.js"></script>
+<div class="picture-box">
+    <div class="picture-pro">
+        <a href="javascript:;" class="gallery-product">
+            <img src="img/products/pro-picture-1.png"/>
+        </a>
+    </div>
+    <div class="picture-sld">
+        <ul class="owl-carousel js-sld-picture">
+            <li class="item">
+                <a href="javascript:;" class="gallery-product">
+                    <div class="img">
+                        <img class="owl-lazy" data-src="img/products/pro-thub-1.png"/>
+                    </div>
+                    <span>Tím</span>
+                </a>
+            </li>
+            <li class="item">
+                <a href="javascript:;" class="gallery-product">
+                    <div class="img">
+                        <img class="owl-lazy" data-src="img/products/pro-thub-2.png"/>
+                    </div>
+                    <span>Đen</span>
+                </a>
+            </li>
+            <li class="item">
+                <a href="javascript:;" class="gallery-product">
+                    <div class="img">
+                        <img class="owl-lazy" data-src="img/products/pro-thub-3.png"/>
+                    </div>
+                    <span>Vàng đồng</span>
+                </a>
+            </li>
+            <li class="item">
+                <a href="javascript:;" class="gallery-product">
+                    <div class="img">
+                        <i class="ion-social-dropbox-outline"></i>
+                    </div>
+                    <span>Unbox, mở hộp</span>
+                </a>
+            </li>
+
+            <li class="item">
+                <a href="javascript:;" class="gallery-product">
+                    <div class="img">
+                        <i class="ion-ios-camera-outline"></i>
+                    </div>
+                    <span>Ảnh chụp Camera</span>
+                </a>
+            </li>
+            <li class="item">
+                <a href="javascript:;" onclick="callProduct360()">
+                    <div class="img">
+                        <img class="owl-lazy" data-src="img/icons/icon-360.png"/>
+                    </div>
+                    <span>Ảnh 360</span>
+                </a>
+            </li>
+            <li class="item">
+                <a href="javascript:;" class="gallery-video">
+                    <div class="img">
+                        <i class="ion-social-youtube-outline"></i>
+                    </div>
+                    <span>Video</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<script src="js/nhatcuong_360.js"></script>
+
+<div id="image-360-wrap">
+    <div id="image-360-close"><span class="ion-close-round"></span></div>
+    <h3 class="image-360-title">Hình ảnh 360 độ của Iphone 6s Plus</h3>
+    <small>Giữ chuột và kéo về 2 bên để xem các góc của sản phẩm</small>
+    <div class="image-360-view">
+        <div class="images-360-body image-360">
+            <div class="spinner">
+                <span>0%</span>
+            </div>
+            <ol class="image-360_images"></ol>
+        </div>
+    </div>
+</div>
+
+<script>
+   
+
+    window.onload = init;
+    var car;
+    function init() {
+        car = $('.image-360').ThreeSixty({
+            totalFrames: 36, // Total no. of image you have for 360 slider
+            endFrame: 36, // end frame for the auto spin animation
+            currentFrame: 1, // This the start frame for auto spin
+            imgList: '.image-360_images', // selector for image list
+            progress: '.spinner', // selector to show the loading progress
+            imagePath: 'img/products/360/', // path of the image assets
+            filePrefix: 'iphone-7-plus-128gb-360-org-', // file prefix if any
+            ext: '.jpg', // extention for the assets
+            width: 680,
+            height: 510,
+            navigation: false,
+            responsive: true,
+        });
+        car.play();
+    }
+</script>
+
+<script>
+    function callProduct360() {
+        $("#image-360-wrap").fadeIn();
+    }
+    $('#image-360-close').on('click', function(event) {
+        $("#image-360-wrap").fadeOut();
+    });
+</script>
+
+<script>
+    var albumGallery = $('.gallery-product');
+    albumGallery.on("click", function() {
+        photos = [
+            {
+                src: 'img/products/pro-picture-thub-1.jpg',
+                //opts: {
+                //    caption: 'First caption'
+                //}
+            },
+            {
+                src: 'img/products/pro-picture-thub-2.jpg',
+
+            },
+            {
+                src: 'img/products/pro-picture-thub-3.jpg',
+
+            },
+            {
+                src: 'img/products/pro-picture-thub-4.jpg',
+
+            },
+            {
+                src: 'img/products/pro-picture-thub-5.jpg',
+
+            },
+            {
+                src: 'img/products/pro-picture-thub-6.jpg',
+
+            },
+            {
+                src: 'img/products/pro-picture-thub-7.jpg',
+
+            },
+            {
+                src: 'img/products/pro-picture-thub-8.jpg',
+
+            },
+            {
+                src: 'img/products/pro-picture-thub-9.jpg',
+
+            },
+            {
+                src: 'img/products/pro-picture-thub-10.jpg',
+
+            },
+            {
+                src: 'img/products/pro-picture-thub-11.jpg',
+
+            },
+            {
+                src: 'img/products/pro-picture-thub-12.jpg',
+
+            },
+        ]
+        $.fancybox.open(photos, {
+            loop: false,
+            infobar: true,
+            transitionEffect: "tube",
+            thumbs: {
+                autoStart: true
+            },
+            margin: [44, 0, 90, 0]
+        });
+    });
+</script>
+
+<script>
+    var albumVideo = $('.gallery-video');
+    albumVideo.on("click", function() {
+        videos = [
+            {
+                src: 'https://youtu.be/DgWLDfC4dYM',
+            },
+            {
+                src: 'https://youtu.be/jq_-OHvOcYY',
+            },
+            {
+                src: 'https://youtu.be/WU7SGn0MeP0',
+            },
+            {
+                src: 'https://youtu.be/QcfIroNI3NU',
+            },
+        ]
+        $.fancybox.open(videos, {
+            youtube: {
+                controls: 1,
+                showinfo: 1,
+                autoplay:0,
+            },
+            thumbs: {
+                autoStart: true
+            },
+            margin: [44, 0, 90, 0]
+        });
+    });
+</script>
+            <script src="js/fotorama.min.js"></script>
+<div id="wrap-fotorama">
+    <div class="fotorama-1" data-auto="false" data-allowfullscreen="true" data-nav="thumbs" data-fit="scaledown" data-thumbwidth="100" data-arrows="true" data-click="true" data-swipe="true">
+        <a href="img/products/img_slider-1.jpg" data-thumb="img/products/img_thub-1.jpg" data-caption="Tiêu đề 1"></a>
+        <a href="img/products/img_slider-2.jpg" data-thumb="img/products/img_thub-2.jpg" data-caption="Tiêu đề 2"></a>
+        <a href="img/products/img_slider-3.jpg" data-thumb="img/products/img_thub-3.jpg" data-caption="Tiêu đề 3"></a>
+        <a href="img/products/img_slider-3.jpg" data-thumb="img/products/img_thub-4.jpg" data-caption="Tiêu đề 4"></a>
+        <a href="img/products/img_slider-4.jpg" data-thumb="img/products/img_thub-5.jpg" data-caption="Tiêu đề 5"></a>
+    </div>
+    <div class="fotorama-2" data-auto="false" data-allowfullscreen="true" data-nav="thumbs" data-fit="scaledown" data-thumbwidth="100" data-arrows="true" data-click="true" data-swipe="true">
+        <a href="img/products/img_slider-1.jpg" data-thumb="img/products/img_thub-1.jpg" data-caption="Tiêu đề 6"></a>
+        <a href="img/products/img_slider-2.jpg" data-thumb="img/products/img_thub-2.jpg" data-caption="Tiêu đề 7"></a>
+        <a href="img/products/img_slider-3.jpg" data-thumb="img/products/img_thub-3.jpg" data-caption="Tiêu đề 8"></a>
+        <a href="img/products/img_slider-3.jpg" data-thumb="img/products/img_thub-4.jpg" data-caption="Tiêu đề 9"></a>
+        <a href="img/products/img_slider-4.jpg" data-thumb="img/products/img_thub-5.jpg" data-caption="Tiêu đề 10"></a>
+        <a href="img/products/img_slider-1.jpg" data-thumb="img/products/img_thub-1.jpg" data-caption="Tiêu đề 6"></a>
+        <a href="img/products/img_slider-2.jpg" data-thumb="img/products/img_thub-2.jpg" data-caption="Tiêu đề 7"></a>
+        <a href="img/products/img_slider-3.jpg" data-thumb="img/products/img_thub-3.jpg" data-caption="Tiêu đề 8"></a>
+        <a href="img/products/img_slider-3.jpg" data-thumb="img/products/img_thub-4.jpg" data-caption="Tiêu đề 9"></a>
+        <a href="img/products/img_slider-4.jpg" data-thumb="img/products/img_thub-5.jpg" data-caption="Tiêu đề 10"></a>
+        <a href="img/products/img_slider-1.jpg" data-thumb="img/products/img_thub-1.jpg" data-caption="Tiêu đề 6"></a>
+        <a href="img/products/img_slider-2.jpg" data-thumb="img/products/img_thub-2.jpg" data-caption="Tiêu đề 7"></a>
+        <a href="img/products/img_slider-3.jpg" data-thumb="img/products/img_thub-3.jpg" data-caption="Tiêu đề 8"></a>
+        <a href="img/products/img_slider-3.jpg" data-thumb="img/products/img_thub-4.jpg" data-caption="Tiêu đề 9"></a>
+        <a href="img/products/img_slider-4.jpg" data-thumb="img/products/img_thub-5.jpg" data-caption="Tiêu đề 10"></a>
+        <a href="img/products/img_slider-1.jpg" data-thumb="img/products/img_thub-1.jpg" data-caption="Tiêu đề 6"></a>
+        <a href="img/products/img_slider-2.jpg" data-thumb="img/products/img_thub-2.jpg" data-caption="Tiêu đề 7"></a>
+        <a href="img/products/img_slider-3.jpg" data-thumb="img/products/img_thub-3.jpg" data-caption="Tiêu đề 8"></a>
+        <a href="img/products/img_slider-3.jpg" data-thumb="img/products/img_thub-4.jpg" data-caption="Tiêu đề 9"></a>
+        <a href="img/products/img_slider-4.jpg" data-thumb="img/products/img_thub-5.jpg" data-caption="Tiêu đề 10"></a>
+    </div>
+</div>
+
+
+<script>
+    function callGalleryFoto(id) {
+        //$.post("URL" + id, function (data) {
+        //    $("#wrap-fotorama").html(data);
+
+        var i = $('.fotorama-' + id).fotorama({ allowfullscreen: true }).data('fotorama');
+        i.requestFullScreen();
+        $('.fotorama-' + id).on('fotorama:fullscreenenter fotorama:fullscreenexit', function (e, f) {
+            if (e.type === 'fotorama:fullscreenenter') {
+                f.setOptions({ nav: true });
+            } else {
+                f.destroy();
+            }
+        }).fotorama();
+
+        //});
+    }
+</script>
+           
             <div class="popup-wrap popup-thanks" id="popupThanks">
     <div class="popup-content-wrap">
         <div class="popup-header">
@@ -490,6 +661,166 @@
         <div class="popup-footer"></div>
     </div>
 </div>
+           
+            <div class="owl-carousel" id="js-slider-carousel">
+    <a href="#" title=""><img data-src="img/products/img_slider-1.jpg" class="owl-lazy img-fluid" /></a>
+    <a href="#" title=""><img data-src="img/products/img_slider-2.jpg" class="owl-lazy img-fluid" /></a>
+    <a href="#" title=""><img data-src="img/products/img_slider-3.jpg" class="owl-lazy img-fluid" /></a>
+    <a href="#" title=""><img data-src="img/products/img_slider-4.jpg" class="owl-lazy img-fluid" /></a>
+    <a href="#" title=""><img data-src="img/products/img_slider-5.jpg" class="owl-lazy img-fluid" /></a>
+    <a href="#" title=""><img data-src="img/products/img_slider-1.jpg" class="owl-lazy img-fluid" /></a>
+    <a href="#" title=""><img data-src="img/products/img_slider-2.jpg" class="owl-lazy img-fluid" /></a>
+    <a href="#" title=""><img data-src="img/products/img_slider-3.jpg" class="owl-lazy img-fluid" /></a>
+    <a href="#" title=""><img data-src="img/products/img_slider-4.jpg" class="owl-lazy img-fluid" /></a>
+</div>
+
+<div class="fancy-gallery-slider owl-carousel owl-full" id="js-slider-main">
+    <a href="img/products/img_slider-1.jpg" data-fancybox="images" data-caption="Hello, World! 1"><img class="owl-lazy" data-src="img/products/img_slider-1.jpg" /></a>
+    <a href="img/products/img_slider-2.jpg" data-fancybox="images" data-caption="Hello, World! 1"><img class="owl-lazy" data-src="img/products/img_slider-2.jpg" /></a>
+    <a href="img/products/img_slider-3.jpg" data-fancybox="images" data-caption="Hello, World! 1"><img class="owl-lazy" data-src="img/products/img_slider-3.jpg" /></a>
+    <a href="img/products/img_slider-4.jpg" data-fancybox="images" data-caption="Hello, World! 1"><img class="owl-lazy" data-src="img/products/img_slider-4.jpg" /></a>
+    <a href="img/products/img_slider-5.jpg" data-fancybox="images" data-caption="Hello, World! 1"><img class="owl-lazy" data-src="img/products/img_slider-5.jpg" /></a>
+</div>
+
+<div class="fancy-gallery-box">
+    <div class="fancy-gallery-main owl-carousel owl-views" id="js-slider-views">
+        <a href="img/products/img_slider-1.jpg" data-fancybox="images" data-caption="Hello, World! 1">
+            <img class="owl-lazy" data-src="img/products/img_slider-1.jpg"/>
+            <div class="owl-caption">
+                <span>Ảnh chụp dưới trời nắng, vật thể chuyển động nhanh Ảnh chụp dưới trời nắng, vật thể chuyển động nhanh Ảnh chụp dưới trời nắng, vật thể chuyển động nhanh Ảnh chụp dưới trời nắng, vật thể chuyển động nhanh</span>
+            </div>
+        </a>
+        <a href="img/products/img_slider-2.jpg" data-fancybox="images" data-caption="Hello, World! 1"><img class="owl-lazy" data-src="img/products/img_slider-2.jpg"/></a>
+        <a href="img/products/img_slider-3.jpg" data-fancybox="images" data-caption="Hello, World! 1"><img class="owl-lazy" data-src="img/products/img_slider-3.jpg"/></a>
+        <a href="img/products/img_slider-4.jpg" data-fancybox="images" data-caption="Hello, World! 1"><img class="owl-lazy" data-src="img/products/img_slider-4.jpg"/></a>
+        <a href="img/products/img_slider-5.jpg" data-fancybox="images" data-caption="Hello, World! 1"><img class="owl-lazy" data-src="img/products/img_slider-5.jpg"/></a>
+        <a href="img/products/img_slider-1.jpg" data-fancybox="images" data-caption="Hello, World! 1"><img class="owl-lazy" data-src="img/products/img_slider-1.jpg"/></a>
+        <a href="img/products/img_slider-2.jpg" data-fancybox="images" data-caption="Hello, World! 1"><img class="owl-lazy" data-src="img/products/img_slider-2.jpg"/></a>
+        <a href="img/products/img_slider-3.jpg" data-fancybox="images" data-caption="Hello, World! 1"><img class="owl-lazy" data-src="img/products/img_slider-3.jpg"/></a>
+        <a href="img/products/img_slider-4.jpg" data-fancybox="images" data-caption="Hello, World! 1"><img class="owl-lazy" data-src="img/products/img_slider-4.jpg"/></a>
+        <a href="img/products/img_slider-5.jpg" data-fancybox="images" data-caption="Hello, World! 1"><img class="owl-lazy" data-src="img/products/img_slider-5.jpg"/></a>
+    </div>
+    <div class="fancy-gallery-thub owl-carousel owl-thubs" id="js-slider-thubs">
+        <div class="item-thubs"><img class="owl-lazy" data-src="img/products/img_thub-1.jpg"/>
+        </div>
+        <div class="item-thubs"><img class="owl-lazy" data-src="img/products/img_thub-2.jpg"/>
+        </div>
+        <div class="item-thubs"><img class="owl-lazy" data-src="img/products/img_thub-3.jpg"/>
+        </div>
+        <div class="item-thubs"><img class="owl-lazy" data-src="img/products/img_thub-4.jpg"/>
+        </div>
+        <div class="item-thubs"><img class="owl-lazy" data-src="img/products/img_thub-5.jpg"/>
+        </div>
+        <div class="item-thubs"><img class="owl-lazy" data-src="img/products/img_thub-1.jpg"/>
+        </div>
+        <div class="item-thubs"><img class="owl-lazy" data-src="img/products/img_thub-2.jpg"/>
+        </div>
+        <div class="item-thubs"><img class="owl-lazy" data-src="img/products/img_thub-3.jpg"/>
+        </div>
+        <div class="item-thubs"><img class="owl-lazy" data-src="img/products/img_thub-4.jpg"/>
+        </div>
+        <div class="item-thubs"><img class="owl-lazy" data-src="img/products/img_thub-5.jpg"/>
+        </div>
+    </div>
+</div>
+
+            <div class="fancy-gallery-mansory">
+    <ul id="menu-mansory" data-filter-grid="#data-gallery">
+        <li><a class="active btn btn-danger" href="#" title="" data-filter="*">thư viện ảnh</a></li>
+        <li><a href="#" class="btn btn-danger" title="" data-filter=".khonggian">Không gian</a></li>
+        <li><a href="#" class="btn btn-danger" title="" data-filter=".massage">Massage</a></li>
+        <li><a href="#" class="btn btn-danger" title="" data-filter=".chamsocmat">chăm sóc mặt</a></li>
+        <li><a href="#" class="btn btn-danger" title="" data-filter=".chamsoccothe">chăm sóc cơ thể</a></li>
+        <li><a href="#" class="btn btn-danger" title="" data-filter=".thuytrilieu">thủy trị liệu</a></li>
+    </ul>
+    <div class="list-gallery js-mansory" id="data-gallery">
+        <a href="img/products/img-gallery-1.jpg" title="PHÒNG MAI,Không gian, Chăm sóc cơ thể, Chăm sóc mặt" class="item type-gallery item-fancybox khonggian">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-original="img/products/img-gallery-1.jpg" class="lazyMansory" />
+            <div class="caption">
+                <strong>PHÒNG MAI 1</strong>
+                <span>Không gian, Chăm sóc cơ thể, Chăm sóc mặt</span>
+            </div>
+        </a>
+        <a href="img/products/img-gallery-2.jpg" title="PHÒNG MAI,Không gian, Chăm sóc cơ thể, Chăm sóc mặt" class="item type-gallery item-fancybox massage">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-original="img/products/img-gallery-2.jpg" class="lazyMansory" />
+            <div class="caption">
+                <strong>PHÒNG MAI 2</strong>
+                <span>Không gian, Chăm sóc cơ thể, Chăm sóc mặt</span>
+            </div>
+        </a>
+        <a href="img/products/img-gallery-3.jpg" title="PHÒNG MAI,Không gian, Chăm sóc cơ thể, Chăm sóc mặt" class="item item-wipe type-gallery item-fancybox chamsocmat">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-original="img/products/img-gallery-3.jpg" class="lazyMansory" />
+            <div class="caption">
+                <strong>PHÒNG MAI</strong>
+                <span>Không gian, Chăm sóc cơ thể, Chăm sóc mặt</span>
+            </div>
+        </a>
+        <a href="img/products/img-gallery-4.jpg" title="PHÒNG MAI,Không gian, Chăm sóc cơ thể, Chăm sóc mặt" class="item type-gallery item-fancybox chamsoccothe">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-original="img/products/img-gallery-4.jpg" class="lazyMansory" />
+            <div class="caption">
+                <strong>PHÒNG MAI</strong>
+                <span>Không gian, Chăm sóc cơ thể, Chăm sóc mặt</span>
+            </div>
+        </a>
+        <a href="img/products/img-gallery-5.jpg" title="PHÒNG MAI,Không gian, Chăm sóc cơ thể, Chăm sóc mặt" class="item type-gallery item-fancybox thuytrilieu">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-original="img/products/img-gallery-5.jpg" class="lazyMansory" />
+            <div class="caption">
+                <strong>PHÒNG MAI</strong>
+                <span>Không gian, Chăm sóc cơ thể, Chăm sóc mặt</span>
+            </div>
+        </a>
+        <a href="img/products/img-gallery-6.jpg" title="PHÒNG MAI,Không gian, Chăm sóc cơ thể, Chăm sóc mặt" class="item type-gallery item-fancybox chamsoccothe">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-original="img/products/img-gallery-6.jpg" class="lazyMansory" />
+            <div class="caption">
+                <strong>PHÒNG MAI</strong>
+                <span>Không gian, Chăm sóc cơ thể, Chăm sóc mặt</span>
+            </div>
+        </a>
+        <a href="img/products/img-gallery-7.jpg" title="PHÒNG MAI,Không gian, Chăm sóc cơ thể, Chăm sóc mặt" class="item type-gallery item-fancybox thuytrilieu">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-original="img/products/img-gallery-7.jpg" class="lazyMansory" />
+            <div class="caption">
+                <strong>PHÒNG MAI</strong>
+                <span>Không gian, Chăm sóc cơ thể, Chăm sóc mặt</span>
+            </div>
+        </a>
+        <a href="img/products/img-gallery-8.jpg" title="PHÒNG MAI,Không gian, Chăm sóc cơ thể, Chăm sóc mặt" class="item type-gallery item-fancybox khonggian">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-original="img/products/img-gallery-8.jpg" class="lazyMansory" />
+            <div class="caption">
+                <strong>PHÒNG MAI</strong>
+                <span>Không gian, Chăm sóc cơ thể, Chăm sóc mặt</span>
+            </div>
+        </a>
+        <a href="img/products/img-gallery-9.jpg" title="PHÒNG MAI,Không gian, Chăm sóc cơ thể, Chăm sóc mặt" class="item type-gallery item-fancybox chamsoccothe">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-original="img/products/img-gallery-9.jpg" class="lazyMansory" />
+            <div class="caption">
+                <strong>PHÒNG MAI</strong>
+                <span>Không gian, Chăm sóc cơ thể, Chăm sóc mặt</span>
+            </div>
+        </a>
+        <a href="img/products/img-gallery-10.jpg" title="PHÒNG MAI,Không gian, Chăm sóc cơ thể, Chăm sóc mặt" class="item type-gallery item-fancybox chamsocmat">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-original="img/products/img-gallery-10.jpg" class="lazyMansory" />
+            <div class="caption">
+                <strong>PHÒNG MAI</strong>
+                <span>Không gian, Chăm sóc cơ thể, Chăm sóc mặt</span>
+            </div>
+        </a>
+        <a href="img/products/img-gallery-11.jpg" title="PHÒNG MAI,Không gian, Chăm sóc cơ thể, Chăm sóc mặt" class="item type-gallery item-fancybox chamsoccothe">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-original="img/products/img-gallery-11.jpg" class="lazyMansory" />
+            <div class="caption">
+                <strong>PHÒNG MAI</strong>
+                <span>Không gian, Chăm sóc cơ thể, Chăm sóc mặt</span>
+            </div>
+        </a>
+        <a href="img/products/img-gallery-12.jpg" title="PHÒNG MAI,Không gian, Chăm sóc cơ thể, Chăm sóc mặt" class="item type-gallery item-fancybox thuytrilieu">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-original="img/products/img-gallery-12.jpg" class="lazyMansory" />
+            <div class="caption">
+                <strong>PHÒNG MAI</strong>
+                <span>Không gian, Chăm sóc cơ thể, Chăm sóc mặt</span>
+            </div>
+        </a>
+    </div>
+</div>
+
             <div class="box-cart">
     <div class="tableCart">
         <table class="table table-hover table-bordered">
@@ -517,7 +848,7 @@
                 <tr>
                     <td class="text-center">
                         <div class="img-cart">
-                            <img src="img/img-product.jpg" alt="" class="img-responsive">
+                            <img src="img/products/img-product.jpg" alt="" class="img-fluid">
                         </div>
                     </td>
                     <td><a href="#" title="">Đệm 3</a></td>
@@ -534,7 +865,7 @@
                 <tr>
                     <td class="text-center">
                         <div class="img-cart">
-                            <img src="img/img-product.jpg" alt="" class="img-responsive">
+                            <img src="img/products/img-product.jpg" alt="" class="img-fluid">
                         </div>
                     </td>
                     <td><a href="#" title="">Đệm 1</a></td>
@@ -551,7 +882,7 @@
                 <tr>
                     <td class="text-center">
                         <div class="img-cart">
-                            <img src="img/img-product.jpg" alt="" class="img-responsive">
+                            <img src="img/products/img-product.jpg" alt="" class="img-fluid">
                         </div>
                     </td>
                     <td><a href="#" title="">Đệm 1</a></td>
@@ -568,7 +899,7 @@
                 <tr>
                     <td class="text-center">
                         <div class="img-cart">
-                            <img src="img/img-product.jpg" alt="" class="img-responsive">
+                            <img src="img/products/img-product.jpg" alt="" class="img-fluid">
                         </div>
                     </td>
                     <td><a href="#" title="">Đệm 1</a></td>
@@ -585,7 +916,7 @@
                 <tr>
                     <td class="text-center">
                         <div class="img-cart">
-                            <img src="img/img-product.jpg" alt="" class="img-responsive">
+                            <img src="img/products/img-product.jpg" alt="" class="img-fluid">
                         </div>
                     </td>
                     <td><a href="#" title="">Đệm 1</a></td>
@@ -657,327 +988,170 @@
 </div>
 
              <div class="list-news grid">
-                    <div class="row">
-                        <div class="col-sm-6 col-md-4">
-                            <div class="item-news item-ef">
-                                <div class="img">
-                                    <a href="#" title="">
-                                        <img data-original="img/img-news.jpg" alt="" class="img-responsive lazyImg">
-                                        <span class="roll tie-news"></span>
-                                    </a>
-                                </div>
-                                <div class="detail">
-                                    <h3>
-                                        <a href="#" title="">Công nghệ đã thay đổi cuộc chơi của các chủ shop online ra sao?</a>
-                                    </h3>
-                                    <div class="post-date">
-                                        <span><i class="fa fa-user"></i>Admin</span>
-                                        <span><i class="fa fa-clock-o"></i>29/15/2015</span>
-                                    </div>
-                                    <div class="text-news">
-                                        Thương mại điện tử tại Việt Nam phát triển nhanh chóng như hiện nay một phần nhờ vào sự lên ngôi của các ứng dụng công nghệ trong kinh doanh đã giúp các chủ shop online quản lý và bán hàng hiệu quả hơn.
-                                    </div>
-
-                                </div>
-                                <div class="option">
-                                    <a href="#" class="link-readmore">Đọc thêm<span class="fa fa-angle-right"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-4">
-                            <div class="item-news item-ef">
-                                <div class="img">
-                                    <a href="#" title="">
-                                        <img data-original="img/img-news.jpg" alt="" class="img-responsive lazyImg">
-                                        <span class="roll tie-news"></span>
-                                    </a>
-                                </div>
-                                <div class="detail">
-                                    <h3>
-                                        <a href="#" title="">Công nghệ đã thay đổi cuộc chơi của các chủ shop online ra sao?</a>
-                                    </h3>
-                                    <div class="post-date">
-                                        <span><i class="fa fa-user"></i>Admin</span>
-                                        <span><i class="fa fa-clock-o"></i>29/15/2015</span>
-                                    </div>
-                                    <div class="text-news">
-                                        Thương mại điện tử tại Việt Nam phát triển nhanh chóng như hiện nay một phần nhờ vào sự lên ngôi của các ứng dụng công nghệ trong kinh doanh đã giúp các chủ shop online quản lý và bán hàng hiệu quả hơn.
-                                    </div>
-
-                                </div>
-                                <div class="option">
-                                    <a href="#" class="bt-readmore">Đọc thêm<span class="fa fa-angle-right"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-4">
-                            <div class="item-news item-ef">
-                                <div class="img">
-                                    <a href="#" title="">
-                                        <img data-original="img/img-news.jpg" alt="" class="img-responsive lazyImg">
-                                        <span class="roll tie-news"></span>
-                                    </a>
-                                </div>
-                                <div class="detail">
-                                    <h3>
-                                        <a href="#" title="">Công nghệ đã thay đổi cuộc chơi của các chủ shop online ra sao?</a>
-                                    </h3>
-                                    <div class="post-date">
-                                        <span><i class="fa fa-user"></i>Admin</span>
-                                        <span><i class="fa fa-clock-o"></i>29/15/2015</span>
-                                    </div>
-                                    <div class="text-news">
-                                        Thương mại điện tử tại Việt Nam phát triển nhanh chóng như hiện nay một phần nhờ vào sự lên ngôi của các ứng dụng công nghệ trong kinh doanh đã giúp các chủ shop online quản lý và bán hàng hiệu quả hơn.
-                                    </div>
-
-                                </div>
-                                <div class="option">
-                                    <a href="#" class="bt-readmore">Đọc thêm<span class="fa fa-angle-right"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-4">
-                            <div class="item-news item-ef">
-                                <div class="img">
-                                    <a href="#" title="">
-                                        <img data-original="img/img-news.jpg" alt="" class="img-responsive lazyImg">
-                                        <span class="roll tie-news"></span>
-                                    </a>
-                                </div>
-                                <div class="detail">
-                                    <h3>
-                                        <a href="#" title="">Công nghệ đã thay đổi cuộc chơi của các chủ shop online ra sao?</a>
-                                    </h3>
-                                    <div class="post-date">
-                                        <span><i class="fa fa-user"></i>Admin</span>
-                                        <span><i class="fa fa-clock-o"></i>29/15/2015</span>
-                                    </div>
-                                    <div class="text-news">
-                                        Thương mại điện tử tại Việt Nam phát triển nhanh chóng như hiện nay một phần nhờ vào sự lên ngôi của các ứng dụng công nghệ trong kinh doanh đã giúp các chủ shop online quản lý và bán hàng hiệu quả hơn.
-                                    </div>
-
-                                </div>
-                                <div class="option">
-                                    <a href="#" class="bt-readmore">Đọc thêm<span class="fa fa-angle-right"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-4">
-                            <div class="item-news item-ef">
-                                <div class="img">
-                                    <a href="#" title="">
-                                        <img data-original="img/img-news.jpg" alt="" class="img-responsive lazyImg">
-                                        <span class="roll tie-news"></span>
-                                    </a>
-                                </div>
-                                <div class="detail">
-                                    <h3>
-                                        <a href="#" title="">Công nghệ đã thay đổi cuộc chơi của các chủ shop online ra sao?</a>
-                                    </h3>
-                                    <div class="post-date">
-                                        <span><i class="fa fa-user"></i>Admin</span>
-                                        <span><i class="fa fa-clock-o"></i>29/15/2015</span>
-                                    </div>
-                                    <div class="text-news">
-                                        Thương mại điện tử tại Việt Nam phát triển nhanh chóng như hiện nay một phần nhờ vào sự lên ngôi của các ứng dụng công nghệ trong kinh doanh đã giúp các chủ shop online quản lý và bán hàng hiệu quả hơn.
-                                    </div>
-
-                                </div>
-                                <div class="option">
-                                    <a href="#" class="bt-readmore">Đọc thêm<span class="fa fa-angle-right"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-4">
-                            <div class="item-news item-ef">
-                                <div class="img">
-                                    <a href="#" title="">
-                                        <img data-original="img/img-news.jpg" alt="" class="img-responsive lazyImg">
-                                        <span class="roll tie-news"></span>
-                                    </a>
-                                </div>
-                                <div class="detail">
-                                    <h3>
-                                        <a href="#" title="">Công nghệ đã thay đổi cuộc chơi của các chủ shop online ra sao?</a>
-                                    </h3>
-                                    <div class="post-date">
-                                        <span><i class="fa fa-user"></i>Admin</span>
-                                        <span><i class="fa fa-clock-o"></i>29/15/2015</span>
-                                    </div>
-                                    <div class="text-news">
-                                        Thương mại điện tử tại Việt Nam phát triển nhanh chóng như hiện nay một phần nhờ vào sự lên ngôi của các ứng dụng công nghệ trong kinh doanh đã giúp các chủ shop online quản lý và bán hàng hiệu quả hơn.
-                                    </div>
-
-                                </div>
-                                <div class="option">
-                                    <a href="#" class="bt-readmore">Đọc thêm<span class="fa fa-angle-right"></span></a>
-                                </div>
-                            </div>
-                        </div>
+    <div class="row">
+        <div class="col-sm-6 col-md-4">
+            <div class="item-news item-ef">
+                <div class="img">
+                    <a href="#" title="">
+                        <img data-original="img/news/img-news.jpg" alt="" class="img-fluid lazyImg">
+                        <span class="roll tie-news"></span>
+                    </a>
+                </div>
+                <div class="detail">
+                    <h3>
+                        <a href="#" title="">Công nghệ đã thay đổi cuộc chơi của các chủ shop online ra sao?</a>
+                    </h3>
+                    <div class="post-date">
+                        <span><i class="fa fa-user"></i>Admin</span>
+                        <span><i class="fa fa-clock-o"></i>29/15/2015</span>
                     </div>
-                    <div class="text-center">
-                        <a href="#" title="" class="btn-readmore btn btn-primary">
-                            Xem thêm
-                        </a>
+                    <div class="text-news">
+                        Thương mại điện tử tại Việt Nam phát triển nhanh chóng như hiện nay một phần nhờ vào sự lên ngôi của các ứng dụng công nghệ trong kinh doanh đã giúp các chủ shop online quản lý và bán hàng hiệu quả hơn.
                     </div>
-            ﻿<div class="owl-carousel" id="js-slider-carousel">
-    <a href="#" title=""><img data-src="img/img_slider-1.jpg" class="owl-lazy img-responsive" /></a>
-    <a href="#" title=""><img data-src="img/img_slider-2.jpg" class="owl-lazy img-responsive" /></a>
-    <a href="#" title=""><img data-src="img/img_slider-3.jpg" class="owl-lazy img-responsive" /></a>
-    <a href="#" title=""><img data-src="img/img_slider-4.jpg" class="owl-lazy img-responsive" /></a>
-    <a href="#" title=""><img data-src="img/img_slider-5.jpg" class="owl-lazy img-responsive" /></a>
-    <a href="#" title=""><img data-src="img/img_slider-1.jpg" class="owl-lazy img-responsive" /></a>
-    <a href="#" title=""><img data-src="img/img_slider-2.jpg" class="owl-lazy img-responsive" /></a>
-    <a href="#" title=""><img data-src="img/img_slider-3.jpg" class="owl-lazy img-responsive" /></a>
-    <a href="#" title=""><img data-src="img/img_slider-4.jpg" class="owl-lazy img-responsive" /></a>
-</div>
 
-<div class="fancy-gallery-slider owl-carousel owl-full" id="js-slider-main">
-    <a href="img/img_slider-1.jpg" data-fancybox="images" data-caption="Hello, World! 1"><img class="owl-lazy" data-src="img/img_slider-1.jpg" /></a>
-    <a href="img/img_slider-2.jpg" data-fancybox="images" data-caption="Hello, World! 1"><img class="owl-lazy" data-src="img/img_slider-2.jpg" /></a>
-    <a href="img/img_slider-3.jpg" data-fancybox="images" data-caption="Hello, World! 1"><img class="owl-lazy" data-src="img/img_slider-3.jpg" /></a>
-    <a href="img/img_slider-4.jpg" data-fancybox="images" data-caption="Hello, World! 1"><img class="owl-lazy" data-src="img/img_slider-4.jpg" /></a>
-    <a href="img/img_slider-5.jpg" data-fancybox="images" data-caption="Hello, World! 1"><img class="owl-lazy" data-src="img/img_slider-5.jpg" /></a>
-</div>
+                </div>
+                <div class="option">
+                    <a href="#" class="link-readmore">Đọc thêm<span class="fa fa-angle-right"></span></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="item-news item-ef">
+                <div class="img">
+                    <a href="#" title="">
+                        <img data-original="img/news/img-news.jpg" alt="" class="img-fluid lazyImg">
+                        <span class="roll tie-news"></span>
+                    </a>
+                </div>
+                <div class="detail">
+                    <h3>
+                        <a href="#" title="">Công nghệ đã thay đổi cuộc chơi của các chủ shop online ra sao?</a>
+                    </h3>
+                    <div class="post-date">
+                        <span><i class="fa fa-user"></i>Admin</span>
+                        <span><i class="fa fa-clock-o"></i>29/15/2015</span>
+                    </div>
+                    <div class="text-news">
+                        Thương mại điện tử tại Việt Nam phát triển nhanh chóng như hiện nay một phần nhờ vào sự lên ngôi của các ứng dụng công nghệ trong kinh doanh đã giúp các chủ shop online quản lý và bán hàng hiệu quả hơn.
+                    </div>
 
-<div class="fancy-gallery-box">
-    <div class="fancy-gallery-main owl-carousel owl-views" id="js-slider-views">
-        <a href="img/img_slider-1.jpg" data-fancybox="images" data-caption="Hello, World! 1">
-            <img class="owl-lazy" data-src="img/img_slider-1.jpg"/>
-            <div class="owl-caption">
-                <span>Ảnh chụp dưới trời nắng, vật thể chuyển động nhanh Ảnh chụp dưới trời nắng, vật thể chuyển động nhanh Ảnh chụp dưới trời nắng, vật thể chuyển động nhanh Ảnh chụp dưới trời nắng, vật thể chuyển động nhanh</span>
+                </div>
+                <div class="option">
+                    <a href="#" class="bt-readmore">Đọc thêm<span class="fa fa-angle-right"></span></a>
+                </div>
             </div>
-        </a>
-        <a href="img/img_slider-2.jpg" data-fancybox="images" data-caption="Hello, World! 1"><img class="owl-lazy" data-src="img/img_slider-2.jpg"/></a>
-        <a href="img/img_slider-3.jpg" data-fancybox="images" data-caption="Hello, World! 1"><img class="owl-lazy" data-src="img/img_slider-3.jpg"/></a>
-        <a href="img/img_slider-4.jpg" data-fancybox="images" data-caption="Hello, World! 1"><img class="owl-lazy" data-src="img/img_slider-4.jpg"/></a>
-        <a href="img/img_slider-5.jpg" data-fancybox="images" data-caption="Hello, World! 1"><img class="owl-lazy" data-src="img/img_slider-5.jpg"/></a>
-        <a href="img/img_slider-1.jpg" data-fancybox="images" data-caption="Hello, World! 1"><img class="owl-lazy" data-src="img/img_slider-1.jpg"/></a>
-        <a href="img/img_slider-2.jpg" data-fancybox="images" data-caption="Hello, World! 1"><img class="owl-lazy" data-src="img/img_slider-2.jpg"/></a>
-        <a href="img/img_slider-3.jpg" data-fancybox="images" data-caption="Hello, World! 1"><img class="owl-lazy" data-src="img/img_slider-3.jpg"/></a>
-        <a href="img/img_slider-4.jpg" data-fancybox="images" data-caption="Hello, World! 1"><img class="owl-lazy" data-src="img/img_slider-4.jpg"/></a>
-        <a href="img/img_slider-5.jpg" data-fancybox="images" data-caption="Hello, World! 1"><img class="owl-lazy" data-src="img/img_slider-5.jpg"/></a>
-    </div>
-    <div class="fancy-gallery-thub owl-carousel owl-thubs" id="js-slider-thubs">
-        <div class="item-thubs"><img class="owl-lazy" data-src="img/img_thub-1.jpg"/>
         </div>
-        <div class="item-thubs"><img class="owl-lazy" data-src="img/img_thub-2.jpg"/>
-        </div>
-        <div class="item-thubs"><img class="owl-lazy" data-src="img/img_thub-3.jpg"/>
-        </div>
-        <div class="item-thubs"><img class="owl-lazy" data-src="img/img_thub-4.jpg"/>
-        </div>
-        <div class="item-thubs"><img class="owl-lazy" data-src="img/img_thub-5.jpg"/>
-        </div>
-        <div class="item-thubs"><img class="owl-lazy" data-src="img/img_thub-1.jpg"/>
-        </div>
-        <div class="item-thubs"><img class="owl-lazy" data-src="img/img_thub-2.jpg"/>
-        </div>
-        <div class="item-thubs"><img class="owl-lazy" data-src="img/img_thub-3.jpg"/>
-        </div>
-        <div class="item-thubs"><img class="owl-lazy" data-src="img/img_thub-4.jpg"/>
-        </div>
-        <div class="item-thubs"><img class="owl-lazy" data-src="img/img_thub-5.jpg"/>
-        </div>
-    </div>
-</div>
+        <div class="col-sm-6 col-md-4">
+            <div class="item-news item-ef">
+                <div class="img">
+                    <a href="#" title="">
+                        <img data-original="img/news/img-news.jpg" alt="" class="img-fluid lazyImg">
+                        <span class="roll tie-news"></span>
+                    </a>
+                </div>
+                <div class="detail">
+                    <h3>
+                        <a href="#" title="">Công nghệ đã thay đổi cuộc chơi của các chủ shop online ra sao?</a>
+                    </h3>
+                    <div class="post-date">
+                        <span><i class="fa fa-user"></i>Admin</span>
+                        <span><i class="fa fa-clock-o"></i>29/15/2015</span>
+                    </div>
+                    <div class="text-news">
+                        Thương mại điện tử tại Việt Nam phát triển nhanh chóng như hiện nay một phần nhờ vào sự lên ngôi của các ứng dụng công nghệ trong kinh doanh đã giúp các chủ shop online quản lý và bán hàng hiệu quả hơn.
+                    </div>
 
-            <div class="fancy-gallery-mansory">
-    <ul id="menu-mansory" data-filter-grid="#data-gallery">
-        <li><a class="active btn btn-danger" href="#" title="" data-filter="*">thư viện ảnh</a></li>
-        <li><a href="#" class="btn btn-danger" title="" data-filter=".khonggian">Không gian</a></li>
-        <li><a href="#" class="btn btn-danger" title="" data-filter=".massage">Massage</a></li>
-        <li><a href="#" class="btn btn-danger" title="" data-filter=".chamsocmat">chăm sóc mặt</a></li>
-        <li><a href="#" class="btn btn-danger" title="" data-filter=".chamsoccothe">chăm sóc cơ thể</a></li>
-        <li><a href="#" class="btn btn-danger" title="" data-filter=".thuytrilieu">thủy trị liệu</a></li>
-    </ul>
-    <div class="list-gallery js-mansory" id="data-gallery">
-        <a href="img/img-gallery-1.jpg" title="PHÒNG MAI,Không gian, Chăm sóc cơ thể, Chăm sóc mặt" class="item type-gallery item-fancybox khonggian">
-            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-original="img/img-gallery-1.jpg" class="lazyMansory" />
-            <div class="caption">
-                <strong>PHÒNG MAI 1</strong>
-                <span>Không gian, Chăm sóc cơ thể, Chăm sóc mặt</span>
+                </div>
+                <div class="option">
+                    <a href="#" class="bt-readmore">Đọc thêm<span class="fa fa-angle-right"></span></a>
+                </div>
             </div>
-        </a>
-        <a href="img/img-gallery-2.jpg" title="PHÒNG MAI,Không gian, Chăm sóc cơ thể, Chăm sóc mặt" class="item type-gallery item-fancybox massage">
-            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-original="img/img-gallery-2.jpg" class="lazyMansory" />
-            <div class="caption">
-                <strong>PHÒNG MAI 2</strong>
-                <span>Không gian, Chăm sóc cơ thể, Chăm sóc mặt</span>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="item-news item-ef">
+                <div class="img">
+                    <a href="#" title="">
+                        <img data-original="img/news/img-news.jpg" alt="" class="img-fluid lazyImg">
+                        <span class="roll tie-news"></span>
+                    </a>
+                </div>
+                <div class="detail">
+                    <h3>
+                        <a href="#" title="">Công nghệ đã thay đổi cuộc chơi của các chủ shop online ra sao?</a>
+                    </h3>
+                    <div class="post-date">
+                        <span><i class="fa fa-user"></i>Admin</span>
+                        <span><i class="fa fa-clock-o"></i>29/15/2015</span>
+                    </div>
+                    <div class="text-news">
+                        Thương mại điện tử tại Việt Nam phát triển nhanh chóng như hiện nay một phần nhờ vào sự lên ngôi của các ứng dụng công nghệ trong kinh doanh đã giúp các chủ shop online quản lý và bán hàng hiệu quả hơn.
+                    </div>
+
+                </div>
+                <div class="option">
+                    <a href="#" class="bt-readmore">Đọc thêm<span class="fa fa-angle-right"></span></a>
+                </div>
             </div>
-        </a>
-        <a href="img/img-gallery-3.jpg" title="PHÒNG MAI,Không gian, Chăm sóc cơ thể, Chăm sóc mặt" class="item item-wipe type-gallery item-fancybox chamsocmat">
-            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-original="img/img-gallery-3.jpg" class="lazyMansory" />
-            <div class="caption">
-                <strong>PHÒNG MAI</strong>
-                <span>Không gian, Chăm sóc cơ thể, Chăm sóc mặt</span>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="item-news item-ef">
+                <div class="img">
+                    <a href="#" title="">
+                        <img data-original="img/news/img-news.jpg" alt="" class="img-fluid lazyImg">
+                        <span class="roll tie-news"></span>
+                    </a>
+                </div>
+                <div class="detail">
+                    <h3>
+                        <a href="#" title="">Công nghệ đã thay đổi cuộc chơi của các chủ shop online ra sao?</a>
+                    </h3>
+                    <div class="post-date">
+                        <span><i class="fa fa-user"></i>Admin</span>
+                        <span><i class="fa fa-clock-o"></i>29/15/2015</span>
+                    </div>
+                    <div class="text-news">
+                        Thương mại điện tử tại Việt Nam phát triển nhanh chóng như hiện nay một phần nhờ vào sự lên ngôi của các ứng dụng công nghệ trong kinh doanh đã giúp các chủ shop online quản lý và bán hàng hiệu quả hơn.
+                    </div>
+
+                </div>
+                <div class="option">
+                    <a href="#" class="bt-readmore">Đọc thêm<span class="fa fa-angle-right"></span></a>
+                </div>
             </div>
-        </a>
-        <a href="img/img-gallery-4.jpg" title="PHÒNG MAI,Không gian, Chăm sóc cơ thể, Chăm sóc mặt" class="item type-gallery item-fancybox chamsoccothe">
-            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-original="img/img-gallery-4.jpg" class="lazyMansory" />
-            <div class="caption">
-                <strong>PHÒNG MAI</strong>
-                <span>Không gian, Chăm sóc cơ thể, Chăm sóc mặt</span>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="item-news item-ef">
+                <div class="img">
+                    <a href="#" title="">
+                        <img data-original="img/news/img-news.jpg" alt="" class="img-fluid lazyImg">
+                        <span class="roll tie-news"></span>
+                    </a>
+                </div>
+                <div class="detail">
+                    <h3>
+                        <a href="#" title="">Công nghệ đã thay đổi cuộc chơi của các chủ shop online ra sao?</a>
+                    </h3>
+                    <div class="post-date">
+                        <span><i class="fa fa-user"></i>Admin</span>
+                        <span><i class="fa fa-clock-o"></i>29/15/2015</span>
+                    </div>
+                    <div class="text-news">
+                        Thương mại điện tử tại Việt Nam phát triển nhanh chóng như hiện nay một phần nhờ vào sự lên ngôi của các ứng dụng công nghệ trong kinh doanh đã giúp các chủ shop online quản lý và bán hàng hiệu quả hơn.
+                    </div>
+
+                </div>
+                <div class="option">
+                    <a href="#" class="bt-readmore">Đọc thêm<span class="fa fa-angle-right"></span></a>
+                </div>
             </div>
-        </a>
-        <a href="img/img-gallery-5.jpg" title="PHÒNG MAI,Không gian, Chăm sóc cơ thể, Chăm sóc mặt" class="item type-gallery item-fancybox thuytrilieu">
-            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-original="img/img-gallery-5.jpg" class="lazyMansory" />
-            <div class="caption">
-                <strong>PHÒNG MAI</strong>
-                <span>Không gian, Chăm sóc cơ thể, Chăm sóc mặt</span>
-            </div>
-        </a>
-        <a href="img/img-gallery-6.jpg" title="PHÒNG MAI,Không gian, Chăm sóc cơ thể, Chăm sóc mặt" class="item type-gallery item-fancybox chamsoccothe">
-            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-original="img/img-gallery-6.jpg" class="lazyMansory" />
-            <div class="caption">
-                <strong>PHÒNG MAI</strong>
-                <span>Không gian, Chăm sóc cơ thể, Chăm sóc mặt</span>
-            </div>
-        </a>
-        <a href="img/img-gallery-7.jpg" title="PHÒNG MAI,Không gian, Chăm sóc cơ thể, Chăm sóc mặt" class="item type-gallery item-fancybox thuytrilieu">
-            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-original="img/img-gallery-7.jpg" class="lazyMansory" />
-            <div class="caption">
-                <strong>PHÒNG MAI</strong>
-                <span>Không gian, Chăm sóc cơ thể, Chăm sóc mặt</span>
-            </div>
-        </a>
-        <a href="img/img-gallery-8.jpg" title="PHÒNG MAI,Không gian, Chăm sóc cơ thể, Chăm sóc mặt" class="item type-gallery item-fancybox khonggian">
-            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-original="img/img-gallery-8.jpg" class="lazyMansory" />
-            <div class="caption">
-                <strong>PHÒNG MAI</strong>
-                <span>Không gian, Chăm sóc cơ thể, Chăm sóc mặt</span>
-            </div>
-        </a>
-        <a href="img/img-gallery-9.jpg" title="PHÒNG MAI,Không gian, Chăm sóc cơ thể, Chăm sóc mặt" class="item type-gallery item-fancybox chamsoccothe">
-            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-original="img/img-gallery-9.jpg" class="lazyMansory" />
-            <div class="caption">
-                <strong>PHÒNG MAI</strong>
-                <span>Không gian, Chăm sóc cơ thể, Chăm sóc mặt</span>
-            </div>
-        </a>
-        <a href="img/img-gallery-10.jpg" title="PHÒNG MAI,Không gian, Chăm sóc cơ thể, Chăm sóc mặt" class="item type-gallery item-fancybox chamsocmat">
-            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-original="img/img-gallery-10.jpg" class="lazyMansory" />
-            <div class="caption">
-                <strong>PHÒNG MAI</strong>
-                <span>Không gian, Chăm sóc cơ thể, Chăm sóc mặt</span>
-            </div>
-        </a>
-        <a href="img/img-gallery-11.jpg" title="PHÒNG MAI,Không gian, Chăm sóc cơ thể, Chăm sóc mặt" class="item type-gallery item-fancybox chamsoccothe">
-            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-original="img/img-gallery-11.jpg" class="lazyMansory" />
-            <div class="caption">
-                <strong>PHÒNG MAI</strong>
-                <span>Không gian, Chăm sóc cơ thể, Chăm sóc mặt</span>
-            </div>
-        </a>
-        <a href="img/img-gallery-12.jpg" title="PHÒNG MAI,Không gian, Chăm sóc cơ thể, Chăm sóc mặt" class="item type-gallery item-fancybox thuytrilieu">
-            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-original="img/img-gallery-12.jpg" class="lazyMansory" />
-            <div class="caption">
-                <strong>PHÒNG MAI</strong>
-                <span>Không gian, Chăm sóc cơ thể, Chăm sóc mặt</span>
-            </div>
-        </a>
+        </div>
     </div>
 </div>
+    <div class="text-center">
+        <a href="#" title="" class="btn-readmore btn btn-primary">
+            Xem thêm
+        </a>
+    </div>
 
             <div class="row">
                 <div class="col-md-9">
@@ -985,7 +1159,7 @@
                             <div class="item-news item-ef">
                                 <div class="img">
                                     <a href="news-detail.html" class="animsition-link" title="">
-                                        <img src="img/img-news.jpg" alt="" class="img-responsive">
+                                        <img src="img/news/img-news.jpg" alt="" class="img-fluid">
                                         <span class="roll tie-news"></span>
                                     </a>
                                 </div>
@@ -1008,7 +1182,7 @@
                             <div class="item-news item-ef">
                                 <div class="img">
                                     <a href="#" title="">
-                                        <img src="img/img-news.jpg" alt="" class="img-responsive">
+                                        <img src="img/news/img-news.jpg" alt="" class="img-fluid">
                                         <span class="roll tie-news"></span>
                                     </a>
                                 </div>
@@ -1031,7 +1205,7 @@
                             <div class="item-news item-ef">
                                 <div class="img">
                                     <a href="#" title="">
-                                        <img src="img/img-news.jpg" alt="" class="img-responsive">
+                                        <img src="img/news/img-news.jpg" alt="" class="img-fluid">
                                         <span class="roll tie-news"></span>
                                     </a>
                                 </div>
@@ -1054,7 +1228,7 @@
                             <div class="item-news item-ef">
                                 <div class="img">
                                     <a href="#" title="">
-                                        <img src="img/img-news.jpg" alt="" class="img-responsive">
+                                        <img src="img/news/img-news.jpg" alt="" class="img-fluid">
                                         <span class="roll tie-news"></span>
                                     </a>
                                 </div>
@@ -1077,7 +1251,7 @@
                             <div class="item-news item-ef">
                                 <div class="img">
                                     <a href="#" title="">
-                                        <img src="img/img-news.jpg" alt="" class="img-responsive">
+                                        <img src="img/news/img-news.jpg" alt="" class="img-fluid">
                                         <span class="roll tie-news"></span>
                                     </a>
                                 </div>
@@ -1100,7 +1274,7 @@
                             <div class="item-news item-ef">
                                 <div class="img">
                                     <a href="#" title="">
-                                        <img src="img/img-news.jpg" alt="" class="img-responsive">
+                                        <img src="img/news/img-news.jpg" alt="" class="img-fluid">
                                         <span class="roll tie-news"></span>
                                     </a>
                                 </div>
@@ -1123,7 +1297,7 @@
                             <div class="item-news item-ef">
                                 <div class="img">
                                     <a href="#" title="">
-                                        <img src="img/img-news.jpg" alt="" class="img-responsive">
+                                        <img src="img/news/img-news.jpg" alt="" class="img-fluid">
                                         <span class="roll tie-news"></span>
                                     </a>
                                 </div>
@@ -1272,7 +1446,7 @@
                             <input type="text" placeholder="Mã capcha" class="ipt-text form-control" name="ctCapcha" />
                         </div>
                         <div class="col-xs-6 col-sm-6 col-md-3">
-                            <img src="../img/img-capcha.jpg" class="img-responsive" />
+                            <img src="../img/img-capcha.jpg" class="img-fluid" />
                         </div>
                         <div class="col-xs-6 col-sm-6 col-md-4">
                             <button type="submit" class="btn btn-primary fr" name="ctSent">Gửi yêu cầu</button>
@@ -1286,8 +1460,51 @@
 
         </div>
         <!-- End main pages -->
-
-
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="border">
+                        Ut fusce varius nisl ac ipsum gravida vel pretium tellus tincidunt integer eu augue augue nunc elit dolor, luctus placerat.
+                    </div>
+                    <div class="border">
+                        Ut fusce varius nisl ac ipsum gravida vel pretium tellus tincidunt integer eu augue augue nunc elit dolor, luctus placerat.
+                    </div>
+                    <div class="border">
+                        Ut fusce varius nisl ac ipsum gravida vel pretium tellus tincidunt integer eu augue augue nunc elit dolor, luctus placerat.
+                    </div>
+                </div>
+                <div class="col-sm-9 border">
+                    <div class="border">
+                        Ut fusce varius nisl ac ipsum gravida vel pretium tellus tincidunt integer eu augue augue nunc elit dolor, luctus placerat.
+                    </div>
+                    <div class="border">
+                        Ut fusce varius nisl ac ipsum gravida vel pretium tellus tincidunt integer eu augue augue nunc elit dolor, luctus placerat.
+                    </div>
+                    <div class="border">
+                        Ut fusce varius nisl ac ipsum gravida vel pretium tellus tincidunt integer eu augue augue nunc elit dolor, luctus placerat.
+                    </div>
+                    <div class="border">
+                        Ut fusce varius nisl ac ipsum gravida vel pretium tellus tincidunt integer eu augue augue nunc elit dolor, luctus placerat.
+                    </div>
+                    <div class="border">
+                        Ut fusce varius nisl ac ipsum gravida vel pretium tellus tincidunt integer eu augue augue nunc elit dolor, luctus placerat.
+                    </div>
+                    <div class="border">
+                        Ut fusce varius nisl ac ipsum gravida vel pretium tellus tincidunt integer eu augue augue nunc elit dolor, luctus placerat.
+                    </div>
+                    <div class="border">
+                        Ut fusce varius nisl ac ipsum gravida vel pretium tellus tincidunt integer eu augue augue nunc elit dolor, luctus placerat.
+                    </div>
+                    <div class="border">
+                        Ut fusce varius nisl ac ipsum gravida vel pretium tellus tincidunt integer eu augue augue nunc elit dolor, luctus placerat.
+                    </div>
+                    <div class="border">
+                        Ut fusce varius nisl ac ipsum gravida vel pretium tellus tincidunt integer eu augue augue nunc elit dolor, luctus placerat.
+                    </div>
+                </div>
+               
+            </div>
+        </div>
         <!-- Open footer pages -->
         
         <!-- End footer pages -->

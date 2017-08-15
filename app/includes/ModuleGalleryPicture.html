@@ -1,50 +1,178 @@
-﻿<div class="picture-box">
+<script src="js/jquery.fancybox.min.js"></script>
+<div class="picture-box">
     <div class="picture-pro">
-        <img src="img/pro-picture-1.png"/>
+        <a href="javascript:;" class="gallery-product">
+            <img src="img/products/pro-picture-1.png"/>
+        </a>
     </div>
     <div class="picture-sld">
         <ul class="owl-carousel js-sld-picture">
-            <li class="item" onclick="">
-                <div class="img"><img class="owl-lazy" data-src="img/pro-thub-1.png"/>
-                </div>
-                <span>Tím</span>
+            <li class="item">
+                <a href="javascript:;" class="gallery-product">
+                    <div class="img">
+                        <img class="owl-lazy" data-src="img/products/pro-thub-1.png"/>
+                    </div>
+                    <span>Tím</span>
+                </a>
             </li>
-            <li class="item" onclick="">
-                <div class="img">
-                    <img class="owl-lazy" data-src="img/pro-thub-2.png"/>
-                </div>
-                <span>Đen</span>
+            <li class="item">
+                <a href="javascript:;" class="gallery-product">
+                    <div class="img">
+                        <img class="owl-lazy" data-src="img/products/pro-thub-2.png"/>
+                    </div>
+                    <span>Đen</span>
+                </a>
             </li>
-            <li class="item" onclick="">
-                <div class="img">
-                    <img class="owl-lazy" data-src="img/pro-thub-3.png"/>
-                </div>
-                <span>Vàng đồng</span>
+            <li class="item">
+                <a href="javascript:;" class="gallery-product">
+                    <div class="img">
+                        <img class="owl-lazy" data-src="img/products/pro-thub-3.png"/>
+                    </div>
+                    <span>Vàng đồng</span>
+                </a>
             </li>
-            <li class="item" onclick="">
-                <div class="img">
-                    <i class="ion-social-dropbox-outline"></i>
-                </div>
-                <span>Unbox, mở hộp</span>
+            <li class="item">
+                <a href="javascript:;" class="gallery-product">
+                    <div class="img">
+                        <i class="ion-social-dropbox-outline"></i>
+                    </div>
+                    <span>Unbox, mở hộp</span>
+                </a>
             </li>
-            <li class="item" onclick="">
-                <div class="img">
-                    <i class="ion-ios-camera-outline"></i>
-                </div>
-                <span>Ảnh chụp Camera</span>
+
+            <li class="item">
+                <a href="javascript:;" class="gallery-product">
+                    <div class="img">
+                        <i class="ion-ios-camera-outline"></i>
+                    </div>
+                    <span>Ảnh chụp Camera</span>
+                </a>
             </li>
-            <li class="item" onclick="">
-                <div class="img">
-                    <img class="owl-lazy" data-src="img/icon-360.png"/>
-                </div>
-                <span>Ảnh 360</span>
+            <li class="item">
+                <a href="javascript:;" onclick="callProduct360()">
+                    <div class="img">
+                        <img class="owl-lazy" data-src="img/icons/icon-360.png"/>
+                    </div>
+                    <span>Ảnh 360</span>
+                </a>
             </li>
-            <li class="item" onclick="">
-                <div class="img">
-                    <i class="ion-social-youtube-outline"></i>
-                </div>
-                <span>Video</span>
+            <li class="item">
+                <a href="javascript:;" class="gallery-video">
+                    <div class="img">
+                        <i class="ion-social-youtube-outline"></i>
+                    </div>
+                    <span>Video</span>
+                </a>
             </li>
         </ul>
     </div>
 </div>
+
+@@include('ModuleGallery360.html')
+
+<script>
+    function callProduct360() {
+        $("#image-360-wrap").fadeIn();
+    }
+    $('#image-360-close').on('click', function(event) {
+        $("#image-360-wrap").fadeOut();
+    });
+</script>
+
+<script>
+    var albumGallery = $('.gallery-product');
+    albumGallery.on("click", function() {
+        photos = [
+            {
+                src: 'img/products/pro-picture-thub-1.jpg',
+                //opts: {
+                //    caption: 'First caption'
+                //}
+            },
+            {
+                src: 'img/products/pro-picture-thub-2.jpg',
+
+            },
+            {
+                src: 'img/products/pro-picture-thub-3.jpg',
+
+            },
+            {
+                src: 'img/products/pro-picture-thub-4.jpg',
+
+            },
+            {
+                src: 'img/products/pro-picture-thub-5.jpg',
+
+            },
+            {
+                src: 'img/products/pro-picture-thub-6.jpg',
+
+            },
+            {
+                src: 'img/products/pro-picture-thub-7.jpg',
+
+            },
+            {
+                src: 'img/products/pro-picture-thub-8.jpg',
+
+            },
+            {
+                src: 'img/products/pro-picture-thub-9.jpg',
+
+            },
+            {
+                src: 'img/products/pro-picture-thub-10.jpg',
+
+            },
+            {
+                src: 'img/products/pro-picture-thub-11.jpg',
+
+            },
+            {
+                src: 'img/products/pro-picture-thub-12.jpg',
+
+            },
+        ]
+        $.fancybox.open(photos, {
+            loop: false,
+            infobar: true,
+            transitionEffect: "tube",
+            thumbs: {
+                autoStart: true
+            },
+            margin: [44, 0, 90, 0]
+        });
+    });
+</script>
+
+<script>
+    var albumVideo = $('.gallery-video');
+    albumVideo.on("click", function() {
+        videos = [
+            {
+                src: 'https://youtu.be/DgWLDfC4dYM',
+            },
+            {
+                src: 'https://youtu.be/jq_-OHvOcYY',
+            },
+            {
+                src: 'https://youtu.be/WU7SGn0MeP0',
+            },
+            {
+                src: 'https://youtu.be/QcfIroNI3NU',
+            },
+        ]
+        $.fancybox.open(videos, {
+            youtube: {
+                controls: 1,
+                showinfo: 1,
+                autoplay:0,
+            },
+            thumbs: {
+                autoStart: true
+            },
+            margin: [44, 0, 90, 0]
+        });
+    });
+</script>
