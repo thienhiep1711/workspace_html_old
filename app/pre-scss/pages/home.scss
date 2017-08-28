@@ -1,0 +1,8 @@
+@import "../helpers/_mixins.scss";
+@import "../helpers/_variables.scss";
+
+h1 {
+    color:$color-primary;
+    margin-top:50px;
+    background-color:#ccc;
+}

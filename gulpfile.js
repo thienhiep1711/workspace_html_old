@@ -38,6 +38,24 @@ gulp.task('styles', function () {
         .pipe(gulp.dest('dist/css'))
         .pipe(browserSync.reload({ stream: true }));
 
+    var pages = gulp.src('app/pre-scss/pages/*.scss')
+       .pipe(sourcemaps.init())
+       .pipe(plumber({
+           errorHandler: function (error) {
+               console.log(error.message);
+               this.emit('end');
+           }
+       }))
+       .pipe(sass())
+       .pipe(sourcemaps.init({ loadMaps: true }))
+       .pipe(autoprefixer('last 2 versions'))
+       .pipe(gulp.dest('dist/css/pages'))
+       .pipe(rename({ suffix: '.min' }))
+       .pipe(cleanCSS())
+       .pipe(sourcemaps.write('../../maps/css/pages/'))
+       .pipe(gulp.dest('dist/css/pages'))
+       .pipe(browserSync.reload({ stream: true }));
+
 
     var apps = gulp.src('app/pre-scss/apps/*.scss')
         .pipe(sourcemaps.init())
@@ -76,7 +94,7 @@ gulp.task('styles', function () {
         .pipe(browserSync.reload({ stream: true }));
 
 
-    return merge(main, apps, bootstraps);
+    return merge(main, apps, bootstraps, pages);
 
 });
 

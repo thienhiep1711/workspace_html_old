@@ -17,8 +17,8 @@
 // 1. Configuration
 // =============================================================================
 
-$star-width: 18px;
-$star-height: 18px;
+$star-width: 24px;
+$star-height: 24px;
 $rating-max: 5;
 $use-half-rating: false;
 
@@ -45,14 +45,16 @@ $unit-width: 100% / $rating-max;
 .boxStarRating {
     float:left;
 
-    width:145px;
+    width:180px;
     .count-rating {
         font-size:14px;
         padding-left:5px;
         float:right;
         display:inline-block;
+        margin-top:3px;
         span {
            padding:0 3px;
+           display:inline-block;
         }
     }
 }
@@ -153,14 +155,14 @@ $unit-width: 100% / $rating-max;
 .star-rating:hover & { display: none; }
   %show-rating { opacity: 1; }
   
-  @for $i from 1 to ($rating-max + 1) {
+  @for $i from 1 to 100 {
   
     // Full Stars
     // =============================================================================
   
     &.current-rating--#{$i} {
       .star-rating__star {
-        width: $unit-width * $i;
+        width: 1% * $i;
         @extend %show-rating;
       }
     }
@@ -169,13 +171,6 @@ $unit-width: 100% / $rating-max;
     // Half Stars
     // =============================================================================
 
-    @if $i < $rating-max {
-      &.current-rating--#{$i}-5 {
-        .star-rating__star {
-          width: $unit-width * $i + $unit-width / 2;
-          @extend %show-rating;
-        }
-      }    
-    }
+  
   }
 }

@@ -545,21 +545,23 @@ input[type=checkbox]:checked + .check-box,
 
 .boxStarRating {
   float: left;
-  width: 145px; }
+  width: 180px; }
   .boxStarRating .count-rating {
     font-size: 14px;
     padding-left: 5px;
     float: right;
-    display: inline-block; }
+    display: inline-block;
+    margin-top: 3px; }
     .boxStarRating .count-rating span {
-      padding: 0 3px; }
+      padding: 0 3px;
+      display: inline-block; }
 
 .star-rating {
   font-size: 0;
   float: left;
   position: relative;
-  width: 90px;
-  height: 18px;
+  width: 120px;
+  height: 24px;
   overflow: hidden;
   background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAAkCAYAAAAOwvOmAAACZ0lEQVR42s2Yz0sUYRjH+wVmB4lCOgR66BAegoQU/4SgQ4culSeRoEKiU0QRrHpSwcCDFEREBMGSiMIOdpA9bGwbLTML+1MjQlE8GGmXgpTdPk/MxrLMzsDM484ufFne2ff9vp95nnee9905VKlUVFQqlQa1vFRM0un0CaB2TNPsbBmoYrF4E6hKoVC42zJQAMUECiVaAkpSRqT2bKhyPp/vCh0KoBEBqooUPmgFqI+1UMgKFSqbzZ4TkHpxvSc0KFL1xAkKjYUGRepKTlBc/xIKFJNfEoBGyuVyfWFAPXWDIlrTTYWKRqNHmXTLA2ozEokc8QWFwRAGb9EcWkRLXFtGCfSJtolyaAV9k8nQd3tyL23QdxVlUZr2B9vbQPP2vK/QczTDgzOJrv+7azpMoLIYhazXsrn/Dxnbw1Uu7oYE85tI3aqyOBVDq5lAUj4IyEXXhR6Px4/T8WWTgN6lUqmOega3aj0sYT0gmD/43/dVEghrLyZflaHWARoIVKcsyzoppUIJyMDrtErx5HMYs0cBYMoyXnxUK3p1r/MrUtatvs1wp6MBoe4cBJQZcD3FVKEymcxZhUX+K5lMtqtBYXhbAUpSeEUTKuZ1GkCPSfEPj36zKlCya7tVdkDeSC2rppn2e5e+aypQcnpoMMk2k1xrUNNGZA01ALsQGAqjFw7GC5wozniMO0+/zw5jHwaCkruuO/b+REMeprUnjmNS39BejUciEBSp668xW/b7nkB8AFuxffZpn/INxSM8bq+NexI1hXdYs3YKb/iGYvAzWRs+INyidhnfKd9Q8qdCvrVlGEab2+9/AaqhSf4SQ/sOAAAAAElFTkSuQmCC");
   background-size: contain;
@@ -603,35 +605,305 @@ input[type=checkbox]:checked + .check-box,
 .star-rating:hover .current-rating {
   display: none; }
 
-.current-rating.current-rating--1 .star-rating__star, .current-rating.current-rating--1-5 .star-rating__star, .current-rating.current-rating--2 .star-rating__star, .current-rating.current-rating--2-5 .star-rating__star, .current-rating.current-rating--3 .star-rating__star, .current-rating.current-rating--3-5 .star-rating__star, .current-rating.current-rating--4 .star-rating__star, .current-rating.current-rating--4-5 .star-rating__star, .current-rating.current-rating--5 .star-rating__star {
+.current-rating.current-rating--1 .star-rating__star, .current-rating.current-rating--2 .star-rating__star, .current-rating.current-rating--3 .star-rating__star, .current-rating.current-rating--4 .star-rating__star, .current-rating.current-rating--5 .star-rating__star, .current-rating.current-rating--6 .star-rating__star, .current-rating.current-rating--7 .star-rating__star, .current-rating.current-rating--8 .star-rating__star, .current-rating.current-rating--9 .star-rating__star, .current-rating.current-rating--10 .star-rating__star, .current-rating.current-rating--11 .star-rating__star, .current-rating.current-rating--12 .star-rating__star, .current-rating.current-rating--13 .star-rating__star, .current-rating.current-rating--14 .star-rating__star, .current-rating.current-rating--15 .star-rating__star, .current-rating.current-rating--16 .star-rating__star, .current-rating.current-rating--17 .star-rating__star, .current-rating.current-rating--18 .star-rating__star, .current-rating.current-rating--19 .star-rating__star, .current-rating.current-rating--20 .star-rating__star, .current-rating.current-rating--21 .star-rating__star, .current-rating.current-rating--22 .star-rating__star, .current-rating.current-rating--23 .star-rating__star, .current-rating.current-rating--24 .star-rating__star, .current-rating.current-rating--25 .star-rating__star, .current-rating.current-rating--26 .star-rating__star, .current-rating.current-rating--27 .star-rating__star, .current-rating.current-rating--28 .star-rating__star, .current-rating.current-rating--29 .star-rating__star, .current-rating.current-rating--30 .star-rating__star, .current-rating.current-rating--31 .star-rating__star, .current-rating.current-rating--32 .star-rating__star, .current-rating.current-rating--33 .star-rating__star, .current-rating.current-rating--34 .star-rating__star, .current-rating.current-rating--35 .star-rating__star, .current-rating.current-rating--36 .star-rating__star, .current-rating.current-rating--37 .star-rating__star, .current-rating.current-rating--38 .star-rating__star, .current-rating.current-rating--39 .star-rating__star, .current-rating.current-rating--40 .star-rating__star, .current-rating.current-rating--41 .star-rating__star, .current-rating.current-rating--42 .star-rating__star, .current-rating.current-rating--43 .star-rating__star, .current-rating.current-rating--44 .star-rating__star, .current-rating.current-rating--45 .star-rating__star, .current-rating.current-rating--46 .star-rating__star, .current-rating.current-rating--47 .star-rating__star, .current-rating.current-rating--48 .star-rating__star, .current-rating.current-rating--49 .star-rating__star, .current-rating.current-rating--50 .star-rating__star, .current-rating.current-rating--51 .star-rating__star, .current-rating.current-rating--52 .star-rating__star, .current-rating.current-rating--53 .star-rating__star, .current-rating.current-rating--54 .star-rating__star, .current-rating.current-rating--55 .star-rating__star, .current-rating.current-rating--56 .star-rating__star, .current-rating.current-rating--57 .star-rating__star, .current-rating.current-rating--58 .star-rating__star, .current-rating.current-rating--59 .star-rating__star, .current-rating.current-rating--60 .star-rating__star, .current-rating.current-rating--61 .star-rating__star, .current-rating.current-rating--62 .star-rating__star, .current-rating.current-rating--63 .star-rating__star, .current-rating.current-rating--64 .star-rating__star, .current-rating.current-rating--65 .star-rating__star, .current-rating.current-rating--66 .star-rating__star, .current-rating.current-rating--67 .star-rating__star, .current-rating.current-rating--68 .star-rating__star, .current-rating.current-rating--69 .star-rating__star, .current-rating.current-rating--70 .star-rating__star, .current-rating.current-rating--71 .star-rating__star, .current-rating.current-rating--72 .star-rating__star, .current-rating.current-rating--73 .star-rating__star, .current-rating.current-rating--74 .star-rating__star, .current-rating.current-rating--75 .star-rating__star, .current-rating.current-rating--76 .star-rating__star, .current-rating.current-rating--77 .star-rating__star, .current-rating.current-rating--78 .star-rating__star, .current-rating.current-rating--79 .star-rating__star, .current-rating.current-rating--80 .star-rating__star, .current-rating.current-rating--81 .star-rating__star, .current-rating.current-rating--82 .star-rating__star, .current-rating.current-rating--83 .star-rating__star, .current-rating.current-rating--84 .star-rating__star, .current-rating.current-rating--85 .star-rating__star, .current-rating.current-rating--86 .star-rating__star, .current-rating.current-rating--87 .star-rating__star, .current-rating.current-rating--88 .star-rating__star, .current-rating.current-rating--89 .star-rating__star, .current-rating.current-rating--90 .star-rating__star, .current-rating.current-rating--91 .star-rating__star, .current-rating.current-rating--92 .star-rating__star, .current-rating.current-rating--93 .star-rating__star, .current-rating.current-rating--94 .star-rating__star, .current-rating.current-rating--95 .star-rating__star, .current-rating.current-rating--96 .star-rating__star, .current-rating.current-rating--97 .star-rating__star, .current-rating.current-rating--98 .star-rating__star, .current-rating.current-rating--99 .star-rating__star {
   opacity: 1; }
 
 .current-rating.current-rating--1 .star-rating__star {
-  width: 20%; }
-
-.current-rating.current-rating--1-5 .star-rating__star {
-  width: 30%; }
+  width: 1%; }
 
 .current-rating.current-rating--2 .star-rating__star {
-  width: 40%; }
-
-.current-rating.current-rating--2-5 .star-rating__star {
-  width: 50%; }
+  width: 2%; }
 
 .current-rating.current-rating--3 .star-rating__star {
-  width: 60%; }
-
-.current-rating.current-rating--3-5 .star-rating__star {
-  width: 70%; }
+  width: 3%; }
 
 .current-rating.current-rating--4 .star-rating__star {
-  width: 80%; }
-
-.current-rating.current-rating--4-5 .star-rating__star {
-  width: 90%; }
+  width: 4%; }
 
 .current-rating.current-rating--5 .star-rating__star {
-  width: 100%; }
+  width: 5%; }
+
+.current-rating.current-rating--6 .star-rating__star {
+  width: 6%; }
+
+.current-rating.current-rating--7 .star-rating__star {
+  width: 7%; }
+
+.current-rating.current-rating--8 .star-rating__star {
+  width: 8%; }
+
+.current-rating.current-rating--9 .star-rating__star {
+  width: 9%; }
+
+.current-rating.current-rating--10 .star-rating__star {
+  width: 10%; }
+
+.current-rating.current-rating--11 .star-rating__star {
+  width: 11%; }
+
+.current-rating.current-rating--12 .star-rating__star {
+  width: 12%; }
+
+.current-rating.current-rating--13 .star-rating__star {
+  width: 13%; }
+
+.current-rating.current-rating--14 .star-rating__star {
+  width: 14%; }
+
+.current-rating.current-rating--15 .star-rating__star {
+  width: 15%; }
+
+.current-rating.current-rating--16 .star-rating__star {
+  width: 16%; }
+
+.current-rating.current-rating--17 .star-rating__star {
+  width: 17%; }
+
+.current-rating.current-rating--18 .star-rating__star {
+  width: 18%; }
+
+.current-rating.current-rating--19 .star-rating__star {
+  width: 19%; }
+
+.current-rating.current-rating--20 .star-rating__star {
+  width: 20%; }
+
+.current-rating.current-rating--21 .star-rating__star {
+  width: 21%; }
+
+.current-rating.current-rating--22 .star-rating__star {
+  width: 22%; }
+
+.current-rating.current-rating--23 .star-rating__star {
+  width: 23%; }
+
+.current-rating.current-rating--24 .star-rating__star {
+  width: 24%; }
+
+.current-rating.current-rating--25 .star-rating__star {
+  width: 25%; }
+
+.current-rating.current-rating--26 .star-rating__star {
+  width: 26%; }
+
+.current-rating.current-rating--27 .star-rating__star {
+  width: 27%; }
+
+.current-rating.current-rating--28 .star-rating__star {
+  width: 28%; }
+
+.current-rating.current-rating--29 .star-rating__star {
+  width: 29%; }
+
+.current-rating.current-rating--30 .star-rating__star {
+  width: 30%; }
+
+.current-rating.current-rating--31 .star-rating__star {
+  width: 31%; }
+
+.current-rating.current-rating--32 .star-rating__star {
+  width: 32%; }
+
+.current-rating.current-rating--33 .star-rating__star {
+  width: 33%; }
+
+.current-rating.current-rating--34 .star-rating__star {
+  width: 34%; }
+
+.current-rating.current-rating--35 .star-rating__star {
+  width: 35%; }
+
+.current-rating.current-rating--36 .star-rating__star {
+  width: 36%; }
+
+.current-rating.current-rating--37 .star-rating__star {
+  width: 37%; }
+
+.current-rating.current-rating--38 .star-rating__star {
+  width: 38%; }
+
+.current-rating.current-rating--39 .star-rating__star {
+  width: 39%; }
+
+.current-rating.current-rating--40 .star-rating__star {
+  width: 40%; }
+
+.current-rating.current-rating--41 .star-rating__star {
+  width: 41%; }
+
+.current-rating.current-rating--42 .star-rating__star {
+  width: 42%; }
+
+.current-rating.current-rating--43 .star-rating__star {
+  width: 43%; }
+
+.current-rating.current-rating--44 .star-rating__star {
+  width: 44%; }
+
+.current-rating.current-rating--45 .star-rating__star {
+  width: 45%; }
+
+.current-rating.current-rating--46 .star-rating__star {
+  width: 46%; }
+
+.current-rating.current-rating--47 .star-rating__star {
+  width: 47%; }
+
+.current-rating.current-rating--48 .star-rating__star {
+  width: 48%; }
+
+.current-rating.current-rating--49 .star-rating__star {
+  width: 49%; }
+
+.current-rating.current-rating--50 .star-rating__star {
+  width: 50%; }
+
+.current-rating.current-rating--51 .star-rating__star {
+  width: 51%; }
+
+.current-rating.current-rating--52 .star-rating__star {
+  width: 52%; }
+
+.current-rating.current-rating--53 .star-rating__star {
+  width: 53%; }
+
+.current-rating.current-rating--54 .star-rating__star {
+  width: 54%; }
+
+.current-rating.current-rating--55 .star-rating__star {
+  width: 55%; }
+
+.current-rating.current-rating--56 .star-rating__star {
+  width: 56%; }
+
+.current-rating.current-rating--57 .star-rating__star {
+  width: 57%; }
+
+.current-rating.current-rating--58 .star-rating__star {
+  width: 58%; }
+
+.current-rating.current-rating--59 .star-rating__star {
+  width: 59%; }
+
+.current-rating.current-rating--60 .star-rating__star {
+  width: 60%; }
+
+.current-rating.current-rating--61 .star-rating__star {
+  width: 61%; }
+
+.current-rating.current-rating--62 .star-rating__star {
+  width: 62%; }
+
+.current-rating.current-rating--63 .star-rating__star {
+  width: 63%; }
+
+.current-rating.current-rating--64 .star-rating__star {
+  width: 64%; }
+
+.current-rating.current-rating--65 .star-rating__star {
+  width: 65%; }
+
+.current-rating.current-rating--66 .star-rating__star {
+  width: 66%; }
+
+.current-rating.current-rating--67 .star-rating__star {
+  width: 67%; }
+
+.current-rating.current-rating--68 .star-rating__star {
+  width: 68%; }
+
+.current-rating.current-rating--69 .star-rating__star {
+  width: 69%; }
+
+.current-rating.current-rating--70 .star-rating__star {
+  width: 70%; }
+
+.current-rating.current-rating--71 .star-rating__star {
+  width: 71%; }
+
+.current-rating.current-rating--72 .star-rating__star {
+  width: 72%; }
+
+.current-rating.current-rating--73 .star-rating__star {
+  width: 73%; }
+
+.current-rating.current-rating--74 .star-rating__star {
+  width: 74%; }
+
+.current-rating.current-rating--75 .star-rating__star {
+  width: 75%; }
+
+.current-rating.current-rating--76 .star-rating__star {
+  width: 76%; }
+
+.current-rating.current-rating--77 .star-rating__star {
+  width: 77%; }
+
+.current-rating.current-rating--78 .star-rating__star {
+  width: 78%; }
+
+.current-rating.current-rating--79 .star-rating__star {
+  width: 79%; }
+
+.current-rating.current-rating--80 .star-rating__star {
+  width: 80%; }
+
+.current-rating.current-rating--81 .star-rating__star {
+  width: 81%; }
+
+.current-rating.current-rating--82 .star-rating__star {
+  width: 82%; }
+
+.current-rating.current-rating--83 .star-rating__star {
+  width: 83%; }
+
+.current-rating.current-rating--84 .star-rating__star {
+  width: 84%; }
+
+.current-rating.current-rating--85 .star-rating__star {
+  width: 85%; }
+
+.current-rating.current-rating--86 .star-rating__star {
+  width: 86%; }
+
+.current-rating.current-rating--87 .star-rating__star {
+  width: 87%; }
+
+.current-rating.current-rating--88 .star-rating__star {
+  width: 88%; }
+
+.current-rating.current-rating--89 .star-rating__star {
+  width: 89%; }
+
+.current-rating.current-rating--90 .star-rating__star {
+  width: 90%; }
+
+.current-rating.current-rating--91 .star-rating__star {
+  width: 91%; }
+
+.current-rating.current-rating--92 .star-rating__star {
+  width: 92%; }
+
+.current-rating.current-rating--93 .star-rating__star {
+  width: 93%; }
+
+.current-rating.current-rating--94 .star-rating__star {
+  width: 94%; }
+
+.current-rating.current-rating--95 .star-rating__star {
+  width: 95%; }
+
+.current-rating.current-rating--96 .star-rating__star {
+  width: 96%; }
+
+.current-rating.current-rating--97 .star-rating__star {
+  width: 97%; }
+
+.current-rating.current-rating--98 .star-rating__star {
+  width: 98%; }
+
+.current-rating.current-rating--99 .star-rating__star {
+  width: 99%; }
 
 .owl-carousel {
   margin-bottom: 20px; }
@@ -3164,4 +3436,198 @@ i.fa {
   .fancybox-container--thumbs .fancybox-caption-wrap {
     bottom: 0; } }
 
+.rating-wrap {
+  float: left;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 14px; }
+  .rating-wrap .title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #383838;
+    margin-bottom: 15px;
+    line-height: 1.45em; }
+
+.rating-content {
+  float: left;
+  width: 100%; }
+  .rating-content b {
+    display: block;
+    margin-bottom: 5px; }
+  .rating-content span {
+    display: inline-block;
+    margin-bottom: 5px; }
+  .rating-content .text-xs-right {
+    text-align: right; }
+    .rating-content .text-xs-right span {
+      display: block; }
+
+.round-star {
+  float: left;
+  width: 100%;
+  margin: 7px 0; }
+
+.rating-ruler {
+  float: left;
+  width: 100%; }
+  .rating-ruler b {
+    margin-top: 5px;
+    display: block; }
+  .rating-ruler ul li {
+    padding: 3px 0;
+    display: block;
+    font-size: 14px; }
+
+.rating-show {
+  float: left;
+  width: 100%; }
+  .rating-show span {
+    display: block;
+    margin-bottom: 10px; }
+
+.rating-result {
+  width: 45%;
+  float: left; }
+  .rating-result .boxStarRating {
+    width: 100%; }
+  .rating-result span {
+    display: block;
+    float: left;
+    width: 100%;
+    margin-top: 10px; }
+  .rating-result small {
+    display: block;
+    float: left;
+    margin-top: 3px; }
+
+.rating-chars {
+  width: 50%;
+  float: right; }
+  .rating-chars ul {
+    display: block;
+    width: 100%; }
+    .rating-chars ul li {
+      display: block;
+      width: 100%;
+      margin-bottom: 15px;
+      float: left; }
+      .rating-chars ul li i {
+        display: inline-block;
+        width: 50px;
+        float: left;
+        font-style: normal; }
+  .rating-chars .proge {
+    width: calc(100% - 135px);
+    float: left;
+    height: 22px;
+    background-color: #ccc;
+    margin-right: 15px;
+    position: relative;
+    position: relative; }
+    .rating-chars .proge .proge-picen {
+      background-color: #007ebb;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0; }
+
+.rating-comments {
+  float: left;
+  width: 100%; }
+  .rating-comments .title-comments {
+    float: left;
+    width: 100%;
+    padding: 10px;
+    background-color: #ccc; }
+    .rating-comments .title-comments h4 {
+      float: left;
+      display: inline-block;
+      font-size: 18px;
+      width: auto; }
+    .rating-comments .title-comments ul {
+      float: right;
+      display: inline-block; }
+      .rating-comments .title-comments ul li {
+        display: inline-block;
+        margin: 0 10px; }
+        .rating-comments .title-comments ul li i {
+          padding-right: 5px; }
+
+.rating-comments-wrap {
+  float: left;
+  width: 100%; }
+
+.viewStarRating .star-rating {
+  width: 100px;
+  height: 20px; }
+
+.viewStarRating .count-rating {
+  display: inline-block;
+  margin-left: 10px; }
+
+.viewStarRating .time-rating {
+  float: right; }
+
+.item-rating-comment {
+  margin: 10px 0;
+  display: block;
+  float: left; }
+
+.rating-name {
+  margin-top: 5px; }
+  .rating-name h6 {
+    display: inline-block;
+    width: auto;
+    padding-left: 10px;
+    font-size: 14px;
+    color: #007ebb; }
+    .rating-name h6 i {
+      margin-right: 5px; }
+
+.rating-text {
+  text-align: justify;
+  line-height: 1.4em;
+  padding: 5px 0;
+  display: block; }
+
+.rating-like h5 {
+  display: inline-block;
+  font-size: 14px;
+  color: #777;
+  width: auto; }
+  .rating-like h5 i {
+    margin-right: 5px; }
+
+.rating-dropdown {
+  float: right;
+  width: 15px;
+  height: 30px;
+  display: block;
+  position: relative; }
+  .rating-dropdown a {
+    text-align: right;
+    line-height: 15px;
+    color: #383838;
+    display: block; }
+    .rating-dropdown a i {
+      font-size: 18px; }
+  .rating-dropdown .dropdown-ct {
+    width: 120px;
+    border: 1px solid #ccc;
+    right: 0;
+    top: 15px;
+    position: absolute;
+    background-color: #fff;
+    opacity: 0;
+    visibility: hidden; }
+    .rating-dropdown .dropdown-ct a {
+      display: block;
+      text-align: right;
+      padding: 5px 10px;
+      line-height: 1.4em; }
+      .rating-dropdown .dropdown-ct a:first-child {
+        border-bottom: 1px solid #ccc; }
+
 /*---Pages---*/
+/*@import "pages/_home.scss";*/
