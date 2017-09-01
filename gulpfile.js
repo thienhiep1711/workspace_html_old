@@ -56,7 +56,6 @@ gulp.task('styles', function () {
        .pipe(gulp.dest('dist/css/pages'))
        .pipe(browserSync.reload({ stream: true }));
 
-
     var apps = gulp.src('app/pre-scss/apps/*.scss')
         .pipe(sourcemaps.init())
         .pipe(plumber({
@@ -132,7 +131,7 @@ gulp.task('scripts', function () {
         .pipe(browserSync.reload({ stream: true }));
 
     var plugin = gulp.src('app/pre-js/include/plugin/*.js')
-        .pipe(sourcemaps.init({ loadMaps: true }))
+       .pipe(sourcemaps.init({ loadMaps: true }))
        .pipe(plumber({
            errorHandler: function (error) {
                console.log(error.message);
@@ -143,13 +142,37 @@ gulp.task('scripts', function () {
        .pipe(gulp.dest('dist/js/'))
        .pipe(rename({ suffix: '.min' }))
        .pipe(uglify())
-        .pipe(sourcemaps.write('../maps/js'))
+       .pipe(sourcemaps.write('../maps/js'))
        .pipe(gulp.dest('dist/js/'))
        .pipe(browserSync.reload({ stream: true }));
 
+    var pages = gulp.src('app/pre-js/include/pages/*.js')
+       .pipe(sourcemaps.init({ loadMaps: true }))
+       .pipe(plumber({
+           errorHandler: function (error) {
+               console.log(error.message);
+               this.emit('end');
+           }
+       }))
+       .pipe(rename({ suffix: '.min' }))
+       .pipe(uglify())
+       .pipe(sourcemaps.write('../../maps/js/pages'))
+       .pipe(gulp.dest('dist/js/pages'))
+       .pipe(browserSync.reload({ stream: true }));
+
+    var plugins = gulp.src('app/pre-js/include/plugins/*.js')
+      .pipe(plumber({
+          errorHandler: function (error) {
+              console.log(error.message);
+              this.emit('end');
+          }
+      }))
+      .pipe(gulp.dest('dist/js'))
+      .pipe(browserSync.reload({ stream: true }));
+
     var customs = gulp.src('app/pre-js/include/custom/*.js')
-           .pipe(sourcemaps.init({ loadMaps: true }))
-           .pipe(plumber({
+       .pipe(sourcemaps.init({ loadMaps: true }))
+       .pipe(plumber({
            errorHandler: function (error) {
                console.log(error.message);
                this.emit('end');
@@ -163,7 +186,7 @@ gulp.task('scripts', function () {
        .pipe(gulp.dest('dist/js/'))
        .pipe(browserSync.reload({ stream: true }));
 
-    return merge(vendors, plugin, customs);
+    return merge(vendors, plugin, customs, pages, plugins);
 
 });
 
@@ -192,6 +215,5 @@ gulp.task('watch', ['browserSync'], function () {
     gulp.watch('app/pre-js/include/**/*.js', ['scripts']);
     gulp.watch('app/**/*.html', ['pages']);
     gulp.watch('dist/*.html', ['bs-reload']);
-    gulp.watch('app/img/**/*', ['images']);
-  
+    gulp.watch('app/img/**/*', ['images']);  
 });
